@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c5tribvvadixo"
+path="res://.godot/imported/bookOpen.ogg-1663631037c449339e0e120ae7f40fc8.oggvorbisstr"
+
+[deps]
+
+source_file="res://Unzipped Assets/kenney_rpg-audio/Audio/bookOpen.ogg"
+dest_files=["res://.godot/imported/bookOpen.ogg-1663631037c449339e0e120ae7f40fc8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

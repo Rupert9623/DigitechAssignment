@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://8ynye14ud6tn"
+path="res://.godot/imported/Preview.ogg-bc0c013a23ddb667058f4f43d99b357f.oggvorbisstr"
+
+[deps]
+
+source_file="res://Unzipped Assets/kenney_rpg-audio/Preview.ogg"
+dest_files=["res://.godot/imported/Preview.ogg-bc0c013a23ddb667058f4f43d99b357f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

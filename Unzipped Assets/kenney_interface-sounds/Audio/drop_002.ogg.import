@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cjb1vwflug2v5"
+path="res://.godot/imported/drop_002.ogg-cc5418211e77546d485ae138fd855875.oggvorbisstr"
+
+[deps]
+
+source_file="res://Unzipped Assets/kenney_interface-sounds/Audio/drop_002.ogg"
+dest_files=["res://.godot/imported/drop_002.ogg-cc5418211e77546d485ae138fd855875.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
