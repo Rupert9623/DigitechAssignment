@@ -40,7 +40,7 @@ func _physics_process(delta):
 
 	move_and_slide()
 	#Respawn
-	if position.y > 2000:
+	if position.y > 4000:
 		respawn()
 
 func respawn():

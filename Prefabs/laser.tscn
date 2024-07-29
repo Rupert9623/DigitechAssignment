@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://dymnyl1cxjh11"]
+
+[ext_resource type="Script" path="res://Scripts/laser.gd" id="1_fgnus"]
+[ext_resource type="Texture2D" uid="uid://bnywg4bmgv2s7" path="res://Unzipped Assets/kenney_platformer-art-requests/Tiles/laserBlueHorizontal.png" id="1_vcu42"]
+[ext_resource type="Texture2D" uid="uid://gffwx1du1anx" path="res://Unzipped Assets/kenney_platformer-art-requests/Tiles/laserRight.png" id="2_1tagm"]
+[ext_resource type="Texture2D" uid="uid://cimjlmpenhcqa" path="res://Unzipped Assets/kenney_platformer-art-requests/Tiles/laserLeftShoot.png" id="3_cg545"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q6efo"]
+size = Vector2(192, 56)
+
+[node name="Laser" type="Area2D"]
+script = ExtResource("1_fgnus")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_q6efo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="LaserBlueHorizontal" type="Sprite2D" parent="."]
+texture = ExtResource("1_vcu42")
+
+[node name="LaserRight" type="Sprite2D" parent="."]
+position = Vector2(-64, 0)
+scale = Vector2(0.957143, 1)
+texture = ExtResource("2_1tagm")
+
+[node name="LaserLeftShoot" type="Sprite2D" parent="."]
+position = Vector2(64, 0)
+texture = ExtResource("3_cg545")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
