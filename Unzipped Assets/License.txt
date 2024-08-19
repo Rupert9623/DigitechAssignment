@@ -1,28 +1,14 @@
-	
 
-	Pixel Platformer (1.2)
+###############################################################################
 
-	Created/distributed by Kenney (www.kenney.nl)
-	Creation date: 07-10-2023
+	Platformer pack: Extended tiles by Kenney Vleugels (www.kenney.nl)
 
 			------------------------------
 
-	License: (Creative Commons Zero, CC0)
-	http://creativecommons.org/publicdomain/zero/1.0/
+			        License (CC0)
+	       http://creativecommons.org/publicdomain/zero/1.0/
 
-	You can use this content for personal, educational, and commercial purposes.
+	You may use these graphics in personal and commercial projects.
+	Credit (Kenney or www.kenney.nl) would be nice but is not mandatory.
 
-	Support by crediting 'Kenney' or 'www.kenney.nl' (this is not a requirement)
-
-			------------------------------
-
-	• Website : www.kenney.nl
-	• Donate  : www.kenney.nl/donate
-
-	• Patreon : patreon.com/kenney
-	
-	Follow on social media for updates:
-
-	• Twitter:	twitter.com/KenneyNL
-	• Instagram: 	instagram.com/kenney_nl
-	• Mastodon:	mastodon.gamedev.place/@kenney
+###############################################################################

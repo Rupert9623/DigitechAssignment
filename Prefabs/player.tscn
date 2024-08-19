@@ -1,9 +1,7 @@
-[gd_scene load_steps=20 format=3 uid="uid://c3hpavbfwam7"]
+[gd_scene load_steps=18 format=3 uid="uid://c3hpavbfwam7"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_bpkap"]
-[ext_resource type="Script" path="res://Scripts/Button.gd" id="3_dncig"]
 [ext_resource type="Texture2D" uid="uid://c4x03l5b5m6kk" path="res://Unzipped Assets/kenney_toon-characters-1/Male adventurer/Tilesheet/character_maleAdventurer_sheetHD.png" id="3_xwi07"]
-[ext_resource type="PackedScene" uid="uid://c3hpavbfwam7" path="res://Prefabs/player.tscn" id="4_8caiq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0hdog"]
 atlas = ExtResource("3_xwi07")
@@ -118,6 +116,7 @@ animations = [{
 size = Vector2(128, 184)
 
 [node name="Player" type="CharacterBody2D"]
+position = Vector2(0, -16)
 script = ExtResource("1_bpkap")
 metadata/_edit_group_ = true
 
@@ -127,20 +126,9 @@ animation = &"Jump"
 autoplay = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 32)
+position = Vector2(0, 36)
 shape = SubResource("RectangleShape2D_4amww")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.75, 0.75)
-limit_left = -64
-limit_top = -64
-limit_right = 2160
-limit_bottom = 1120
 position_smoothing_enabled = true
-script = ExtResource("3_dncig")
-
-[node name="HealthBar" parent="." instance=ExtResource("4_8caiq")]
-offset_left = -80.0
-offset_top = -92.0
-offset_right = 80.0
-offset_bottom = -72.0
