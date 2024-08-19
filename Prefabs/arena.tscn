@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvhs3v28y5q3m"]
+
+[ext_resource type="PackedScene" uid="uid://v7qctv8pjko6" path="res://Prefabs/tile_map.tscn" id="2_eb1yn"]
+[ext_resource type="Texture2D" uid="uid://ceovcw7hm60ol" path="res://Unzipped Assets/startups_from_hell__underground_arena.png" id="3_3hlyk"]
+[ext_resource type="PackedScene" uid="uid://c3hpavbfwam7" path="res://Prefabs/player.tscn" id="3_o5dax"]
+
+[node name="Arena" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_offset = Vector2(776.3, 223.533)
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(580, 324)
+scale = Vector2(2.33333, 2.17949)
+texture = ExtResource("3_3hlyk")
+
+[node name="TileMap" parent="." instance=ExtResource("2_eb1yn")]
+layer_0/tile_data = PackedInt32Array(589821, 262147, 1, 655357, 262147, 1, 655358, 262147, 1, 655359, 262147, 1, 589824, 262147, 1, 589825, 262147, 1, 524289, 262147, 1, 524290, 262147, 1, 524291, 262147, 1, 524292, 262147, 1, 524293, 262147, 1, 589829, 262147, 1, 589830, 262147, 1, 589831, 262147, 1, 589832, 262147, 1)
+
+[node name="Player" parent="." instance=ExtResource("3_o5dax")]
+position = Vector2(96, 96)

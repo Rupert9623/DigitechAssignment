@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bvdh68iy7k8c1"]
+
+[node name="Menu" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
