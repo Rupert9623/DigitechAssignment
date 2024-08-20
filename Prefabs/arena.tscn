@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://dvhs3v28y5q3m"]
+
+[ext_resource type="Script" path="res://Scripts/arena.gd" id="1_0able"]
+[ext_resource type="PackedScene" uid="uid://v7qctv8pjko6" path="res://Prefabs/tile_map.tscn" id="2_eb1yn"]
+[ext_resource type="Texture2D" uid="uid://ceovcw7hm60ol" path="res://Unzipped Assets/startups_from_hell__underground_arena.png" id="3_3hlyk"]
+[ext_resource type="PackedScene" uid="uid://c3hpavbfwam7" path="res://Prefabs/player.tscn" id="3_o5dax"]
+
+[node name="Arena" type="Node2D"]
+script = ExtResource("1_0able")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_offset = Vector2(776.3, 223.533)
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(768, 436)
+scale = Vector2(3.04762, 2.84615)
+texture = ExtResource("3_3hlyk")
+
+[node name="TileMap" parent="." instance=ExtResource("2_eb1yn")]
+layer_0/tile_data = PackedInt32Array(-65536, 3, 6, -65535, 3, 6, -65534, 3, 6, -65533, 3, 6, -65532, 3, 6, -65531, 3, 6, -65530, 3, 6, -65529, 3, 6, -65528, 3, 6, -65527, 3, 6, -65526, 3, 6, -65525, 3, 6, -65524, 3, 6, -65523, 3, 6, -65522, 3, 6, -65521, 3, 6, -65520, 3, 6, -65519, 3, 6, -65518, 3, 6, -65517, 3, 6, -65516, 3, 6, -65515, 3, 6, -65514, 3, 6, -65513, 3, 6, -65512, 3, 6, -65511, 3, 6, -65510, 3, 6, -65509, 3, 6, -65508, 3, 6, -65507, 3, 6, 65535, 131075, 0, 131071, 131075, 0, 196607, 131075, 0, 262143, 131075, 0, 327679, 131075, 0, 393215, 131075, 0, 458751, 131075, 0, 524287, 131075, 0, 589823, 131075, 0, 655359, 131075, 0, 720895, 131075, 0, 786431, 131075, 0, 851967, 131075, 0, 917503, 131075, 0, 983039, 131075, 0, 983040, 262147, 3, 983041, 262147, 3, 983042, 262147, 3, 983043, 262147, 3, 983044, 262147, 3, 983045, 262147, 3, 983046, 262147, 3, 983047, 262147, 3, 983048, 262147, 3, 983049, 262147, 3, 983050, 262147, 3, 983051, 262147, 3, 983052, 262147, 3, 983053, 262147, 3, 983054, 262147, 3, 983055, 262147, 3, 983056, 262147, 3, 983057, 262147, 3, 983058, 262147, 3, 983059, 262147, 3, 983060, 262147, 3, 983061, 262147, 3, 983062, 262147, 3, 983063, 262147, 3, 983064, 262147, 3, 983065, 262147, 3, 983066, 262147, 3, 983067, 262147, 3, 983068, 262147, 3, 983069, 262147, 3, 917534, 131075, 1, 851998, 131075, 1, 786462, 131075, 1, 720926, 131075, 1, 655390, 131075, 1, 589854, 131075, 1, 524318, 131075, 1, 458782, 131075, 1, 393246, 131075, 1, 327710, 131075, 1, 262174, 131075, 1, 196638, 131075, 1, 131102, 131075, 1, 65566, 131075, 1, 30, 131075, 1)
+
+[node name="Player" parent="." instance=ExtResource("3_o5dax")]
+position = Vector2(96, 96)
+
+[connection signal="ready" from="." to="Player" method="_on_arena_ready"]
