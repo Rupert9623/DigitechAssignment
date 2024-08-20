@@ -1,9 +1,8 @@
-[gd_scene load_steps=20 format=3 uid="uid://c3hpavbfwam7"]
+[gd_scene load_steps=19 format=3 uid="uid://c3hpavbfwam7"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_bpkap"]
 [ext_resource type="Script" path="res://Scripts/Button.gd" id="3_dncig"]
 [ext_resource type="Texture2D" uid="uid://c4x03l5b5m6kk" path="res://Unzipped Assets/kenney_toon-characters-1/Male adventurer/Tilesheet/character_maleAdventurer_sheetHD.png" id="3_xwi07"]
-[ext_resource type="PackedScene" uid="uid://c3hpavbfwam7" path="res://Prefabs/player.tscn" id="4_8caiq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0hdog"]
 atlas = ExtResource("3_xwi07")
@@ -138,9 +137,3 @@ limit_right = 2160
 limit_bottom = 1120
 position_smoothing_enabled = true
 script = ExtResource("3_dncig")
-
-[node name="HealthBar" parent="." instance=ExtResource("4_8caiq")]
-offset_left = -80.0
-offset_top = -92.0
-offset_right = 80.0
-offset_bottom = -72.0
