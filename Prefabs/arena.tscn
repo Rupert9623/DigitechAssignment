@@ -13,12 +13,12 @@ scroll_offset = Vector2(776.3, 223.533)
 motion_scale = Vector2(0, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(580, 324)
+position = Vector2(800, 224)
 scale = Vector2(2.33333, 2.17949)
 texture = ExtResource("3_3hlyk")
 
 [node name="TileMap" parent="." instance=ExtResource("2_eb1yn")]
-layer_0/tile_data = PackedInt32Array(589821, 262147, 1, 655357, 262147, 1, 655358, 262147, 1, 655359, 262147, 1, 589824, 262147, 1, 589825, 262147, 1, 524289, 262147, 1, 524290, 262147, 1, 524291, 262147, 1, 524292, 262147, 1, 524293, 262147, 1, 589829, 262147, 1, 589830, 262147, 1, 589831, 262147, 1, 589832, 262147, 1)
+layer_0/tile_data = PackedInt32Array(589821, 262147, 1, 655357, 262147, 1, 655358, 262147, 1, 655359, 262147, 1, 589824, 262147, 1, 589825, 262147, 1, 524289, 262147, 1, 524290, 262147, 1, 524291, 262147, 1, 524292, 262147, 1, 524293, 262147, 1, 589829, 262147, 1, 589830, 262147, 1, 589831, 262147, 1, 589832, 262147, 1, -65536, 3, 6)
 
 [node name="Player" parent="." instance=ExtResource("3_o5dax")]
 position = Vector2(96, 96)

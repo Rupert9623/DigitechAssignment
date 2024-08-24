@@ -80,7 +80,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Jump",
-"speed": 1.9
+"speed": 1.8
 }, {
 "frames": [{
 "duration": 1.0,
@@ -113,20 +113,22 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4amww"]
-size = Vector2(128, 184)
+size = Vector2(64, 136)
 
 [node name="Player" type="CharacterBody2D"]
-position = Vector2(0, -16)
+position = Vector2(0, -8)
 script = ExtResource("1_bpkap")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(3.8147e-06, 48)
+scale = Vector2(0.666667, 0.75)
 sprite_frames = SubResource("SpriteFrames_kh317")
 animation = &"Jump"
 autoplay = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 36)
+position = Vector2(0, 76)
 shape = SubResource("RectangleShape2D_4amww")
 
 [node name="Camera2D" type="Camera2D" parent="."]
