@@ -58,9 +58,5 @@ vertical_alignment = 1
 stream = ExtResource("7_05pcm")
 autoplay = true
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("7_05pcm")
-autoplay = true
-
 [connection signal="timeout" from="enemy_timer" to="." method="_on_enemy_timer_timeout"]
 [connection signal="timeout" from="ScoreTimer" to="." method="_on_score_timer_timeout"]
