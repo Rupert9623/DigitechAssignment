@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dymnyl1cxjh11"]
 
 [ext_resource type="Script" path="res://Scripts/laser.gd" id="1_fgnus"]
-[ext_resource type="Texture2D" uid="uid://jq4okylkwxjk" path="res://Unzipped Assets/kenney_platformer-art-requests/Tiles/laserRedHorizontal.png" id="2_qcnn3"]
+[ext_resource type="Texture2D" uid="uid://dgjfblrbdvl4v" path="res://Unzipped Assets/kenney_platformer-art-requests/Tiles/laserRedHorizontal.png" id="2_qcnn3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q6efo"]
 size = Vector2(192, 56)
