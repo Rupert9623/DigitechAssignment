@@ -1,7 +1,6 @@
-[gd_scene load_steps=22 format=3 uid="uid://c3hpavbfwam7"]
+[gd_scene load_steps=21 format=3 uid="uid://c3hpavbfwam7"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_bpkap"]
-[ext_resource type="Script" path="res://Prefabs/CharacterBody2D.gd" id="3_jt3ie"]
 [ext_resource type="Texture2D" uid="uid://c4x03l5b5m6kk" path="res://Unzipped Assets/kenney_toon-characters-1/Male adventurer/Tilesheet/character_maleAdventurer_sheetHD.png" id="3_xwi07"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cwflj"]
@@ -9,12 +8,6 @@ bg_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dlw82"]
 bg_color = Color(1, 0.356863, 0.0352941, 1)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8btcf"]
-size = Vector2(48, 134)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ycnb"]
-size = Vector2(49, 133)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lo0yf"]
 atlas = ExtResource("3_xwi07")
@@ -79,7 +72,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Idle",
-"speed": 5.0
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -125,7 +118,13 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Player" type="Area2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8btcf"]
+size = Vector2(80, 152)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kbkky"]
+size = Vector2(96, 168)
+
+[node name="Player" type="CharacterBody2D"]
 position = Vector2(0, -16)
 script = ExtResource("1_bpkap")
 
@@ -139,29 +138,28 @@ position_smoothing_enabled = true
 
 [node name="HealthBar" type="ProgressBar" parent="."]
 offset_left = -120.0
-offset_top = -64.0
+offset_top = -112.0
 offset_right = 128.0
-offset_bottom = -37.0
+offset_bottom = -85.0
 theme_override_styles/background = SubResource("StyleBoxFlat_cwflj")
 theme_override_styles/fill = SubResource("StyleBoxFlat_dlw82")
 max_value = 10.0
 value = 5.0
 show_percentage = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 77)
-shape = SubResource("RectangleShape2D_8btcf")
-
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-script = ExtResource("3_jt3ie")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(-0.5, 77.5)
-shape = SubResource("RectangleShape2D_1ycnb")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_1irmf")
-animation = &"Run"
+animation = &"Idle"
 autoplay = "Idle"
 
-[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 44)
+shape = SubResource("RectangleShape2D_8btcf")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 44)
+shape = SubResource("RectangleShape2D_kbkky")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
