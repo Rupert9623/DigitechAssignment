@@ -28,4 +28,7 @@ func _on_score_timer_timeout():
 	print("Score +1")
 	score += 1
 	_update_ui()
+	if score == 100:
+		get_tree().change_scene_to_file("res://Prefabs/arena.tscn")
+		
 	
