@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://wwb5dl8plh4v"]
+[gd_scene load_steps=8 format=3 uid="uid://wwb5dl8plh4v"]
 
 [ext_resource type="Script" path="res://Scripts/game.gd" id="1_pv0v3"]
 [ext_resource type="PackedScene" uid="uid://c3hpavbfwam7" path="res://Prefabs/player.tscn" id="2_7iamt"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://d2sy3vjrbk4gj" path="res://Unzipped Assets/Pixel Caves _ 2D Environments _ Unity Asset Store.jpg" id="3_a181u"]
 [ext_resource type="PackedScene" uid="uid://bwmlwnl5dsoba" path="res://Prefabs/arrow.tscn" id="5_xqxwt"]
 [ext_resource type="Theme" uid="uid://dys1jqy51wkyw" path="res://Prefabs/new_theme.tres" id="6_ndj8f"]
+[ext_resource type="AudioStream" uid="uid://vexlsyl8k5d7" path="res://Unzipped Assets/Undertale OST - 100 MEGALOVANIA.mp3" id="7_05pcm"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_pv0v3")
@@ -14,7 +15,7 @@ script = ExtResource("1_pv0v3")
 position = Vector2(728, 624)
 
 [node name="TileMap" parent="." instance=ExtResource("2_rrcn6")]
-layer_0/tile_data = PackedInt32Array(-65536, 3, 6, -65535, 3, 6, -65534, 3, 6, -65533, 3, 6, -65532, 3, 6, -65531, 3, 6, -65530, 3, 6, -65529, 3, 6, -65528, 3, 6, -65527, 3, 6, -65526, 3, 6, -65525, 3, 6, -65524, 3, 6, -65523, 3, 6, -65522, 3, 6, -65521, 3, 6, -65520, 3, 6, -65519, 3, 6, -65518, 3, 6, -65517, 3, 6, -65516, 3, 6, -65515, 3, 6, -65514, 3, 6, -65513, 3, 6, 65535, 131075, 0, 131071, 131075, 0, 196607, 131075, 0, 262143, 131075, 0, 327679, 131075, 0, 393215, 131075, 0, 458751, 131075, 0, 524287, 131075, 0, 589823, 131075, 0, 655359, 131075, 0, 720895, 131075, 0, 24, 131075, 1, 65560, 131075, 1, 131096, 131075, 1, 196632, 131075, 1, 262168, 131075, 1, 327704, 131075, 1, 393240, 131075, 1, 458776, 131075, 1, 524312, 131075, 1, 589848, 131075, 1, 655384, 131075, 1, 720897, 262147, 3, 720896, 262147, 3, 720898, 262147, 3, 720899, 262147, 3, 720900, 262147, 3, 720901, 262147, 3, 720902, 262147, 3, 720903, 262147, 3, 720904, 262147, 3, 720905, 262147, 3, 720906, 262147, 3, 720907, 262147, 3, 720908, 262147, 3, 720909, 262147, 3, 720910, 262147, 3, 720911, 262147, 3, 720912, 262147, 3, 720913, 262147, 3, 720914, 262147, 3, 720915, 262147, 3, 720916, 262147, 3, 720917, 262147, 3, 720918, 262147, 3, 720919, 262147, 3, 720920, 196611, 1, 786431, 196611, 1, -65537, 196611, 1, -1, 196611, 1, -65512, 196611, 1, 458755, 196611, 3, 458756, 262147, 3, 458757, 262147, 3, 458758, 262147, 3, 458759, 196611, 2, 458772, 196611, 2, 458771, 262147, 3, 458770, 262147, 3, 458769, 262147, 3, 458768, 196611, 3, 196619, 262147, 3, 196620, 262147, 3, 196621, 262147, 3, 196618, 262147, 3, 196617, 196611, 3, 196622, 196611, 2)
+layer_0/tile_data = PackedInt32Array(-65536, 3, 6, -65535, 3, 6, -65534, 3, 6, -65533, 3, 6, -65532, 3, 6, -65531, 3, 6, -65530, 3, 6, -65529, 3, 6, -65528, 3, 6, -65527, 3, 6, -65526, 3, 6, -65525, 3, 6, -65524, 3, 6, -65523, 3, 6, -65522, 3, 6, -65521, 3, 6, -65520, 3, 6, -65519, 3, 6, -65518, 3, 6, -65517, 3, 6, -65516, 3, 6, -65515, 3, 6, -65514, 3, 6, -65513, 3, 6, 65535, 131075, 0, 131071, 131075, 0, 196607, 131075, 0, 262143, 131075, 0, 327679, 131075, 0, 393215, 131075, 0, 458751, 131075, 0, 524287, 131075, 0, 589823, 131075, 0, 655359, 131075, 0, 720895, 131075, 0, 24, 131075, 1, 65560, 131075, 1, 131096, 131075, 1, 196632, 131075, 1, 262168, 131075, 1, 327704, 131075, 1, 393240, 131075, 1, 458776, 131075, 1, 524312, 131075, 1, 589848, 131075, 1, 655384, 131075, 1, 720897, 262147, 3, 720896, 262147, 3, 720898, 262147, 3, 720899, 262147, 3, 720900, 262147, 3, 720901, 262147, 3, 720902, 262147, 3, 720903, 262147, 3, 720904, 262147, 3, 720905, 262147, 3, 720906, 262147, 3, 720907, 262147, 3, 720908, 262147, 3, 720909, 262147, 3, 720910, 262147, 3, 720911, 262147, 3, 720912, 262147, 3, 720913, 262147, 3, 720914, 262147, 3, 720915, 262147, 3, 720916, 262147, 3, 720917, 262147, 3, 720918, 262147, 3, 720919, 262147, 3, 720920, 196611, 1, 786431, 196611, 1, -65537, 196611, 1, -1, 196611, 1, -65512, 3, 5, 458755, 196611, 3, 458756, 262147, 3, 458757, 262147, 3, 458758, 262147, 3, 458759, 196611, 2, 458772, 196611, 2, 458771, 262147, 3, 458770, 262147, 3, 458769, 262147, 3, 458768, 196611, 3, 196619, 262147, 3, 196620, 262147, 3, 196621, 262147, 3, 196618, 262147, 3, 196617, 196611, 3, 196622, 196611, 2)
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -32,6 +33,9 @@ position = Vector2(1832, 608)
 [node name="enemy_timer" type="Timer" parent="."]
 autostart = true
 
+[node name="ScoreTimer" type="Timer" parent="."]
+autostart = true
+
 [node name="GameUi" type="Control" parent="."]
 custom_minimum_size = Vector2(1152, 100)
 layout_mode = 3
@@ -42,12 +46,21 @@ theme = ExtResource("6_ndj8f")
 
 [node name="ScoreLabel" type="Label" parent="GameUi"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 36.0
+offset_left = 632.0
+offset_top = 8.0
+offset_right = 1039.0
+offset_bottom = 60.0
 text = "SCCORE : 0000"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="ScoreTimer" type="Timer" parent="."]
-autostart = true
+[node name="GameAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_05pcm")
+autoplay = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_05pcm")
+autoplay = true
 
 [connection signal="timeout" from="enemy_timer" to="." method="_on_enemy_timer_timeout"]
 [connection signal="timeout" from="ScoreTimer" to="." method="_on_score_timer_timeout"]

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dvhs3v28y5q3m"]
+[gd_scene load_steps=5 format=3 uid="uid://dvhs3v28y5q3m"]
 
 [ext_resource type="PackedScene" uid="uid://v7qctv8pjko6" path="res://Prefabs/tile_map.tscn" id="2_eb1yn"]
 [ext_resource type="Texture2D" uid="uid://ceovcw7hm60ol" path="res://Unzipped Assets/startups_from_hell__underground_arena.png" id="3_3hlyk"]
 [ext_resource type="PackedScene" uid="uid://c3hpavbfwam7" path="res://Prefabs/player.tscn" id="3_o5dax"]
+[ext_resource type="AudioStream" uid="uid://bv860hmem0le8" path="res://Unzipped Assets/Undertale OST - 046 Spear of Justice.mp3" id="4_6rwjn"]
 
 [node name="Arena" type="Node2D"]
 
@@ -13,12 +14,16 @@ scroll_offset = Vector2(776.3, 223.533)
 motion_scale = Vector2(0, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(800, 224)
-scale = Vector2(2.33333, 2.17949)
+position = Vector2(806, 450)
+scale = Vector2(3.18254, 2.91026)
 texture = ExtResource("3_3hlyk")
 
 [node name="TileMap" parent="." instance=ExtResource("2_eb1yn")]
-layer_0/tile_data = PackedInt32Array(589821, 262147, 1, 655357, 262147, 1, 655358, 262147, 1, 655359, 262147, 1, 589824, 262147, 1, 589825, 262147, 1, 524289, 262147, 1, 524290, 262147, 1, 524291, 262147, 1, 524292, 262147, 1, 524293, 262147, 1, 589829, 262147, 1, 589830, 262147, 1, 589831, 262147, 1, 589832, 262147, 1, -65536, 3, 6)
+layer_0/tile_data = PackedInt32Array(-65536, 3, 6, -65535, 3, 6, -65534, 3, 6, -65533, 3, 6, -65532, 3, 6, -65531, 3, 6, -65530, 3, 6, -65529, 3, 6, -65528, 3, 6, -65527, 3, 6, -65526, 3, 6, -65525, 3, 6, -65524, 3, 6, -65523, 3, 6, -65522, 3, 6, -65521, 3, 6, -65520, 3, 6, -65519, 3, 6, -65518, 3, 6, -65517, 3, 6, -65516, 3, 6, -65515, 3, 6, -65514, 3, 6, -65513, 3, 6, -65512, 3, 6, 65535, 131075, 0, 131071, 131075, 0, 196607, 131075, 0, 262143, 131075, 0, 327679, 131075, 0, 393215, 131075, 0, 458751, 131075, 0, 524287, 131075, 0, 589823, 131075, 0, 655359, 131075, 0, 720895, 131075, 0, 25, 131075, 1, 65561, 131075, 1, 131097, 131075, 1, 196633, 131075, 1, 262169, 131075, 1, 327705, 131075, 1, 393241, 131075, 1, 458777, 131075, 1, 524313, 131075, 1, 589849, 131075, 1, 655385, 131075, 1, 720896, 262147, 3, 720897, 262147, 3, 720898, 262147, 3, 720899, 262147, 3, 720900, 262147, 3, 720901, 262147, 3, 720902, 262147, 3, 720903, 262147, 3, 720904, 262147, 3, 720905, 262147, 3, 720906, 262147, 3, 720907, 262147, 3, 720908, 262147, 3, 720909, 262147, 3, 720910, 262147, 3, 720911, 262147, 3, 720912, 262147, 3, 720913, 262147, 3, 720914, 262147, 3, 720915, 262147, 3, 720916, 262147, 3, 720917, 262147, 3, 720918, 262147, 3, 720919, 262147, 3, 720920, 262147, 3, 786431, 3, 5, -1, 3, 5, 720921, 3, 5, -65511, 3, 5, 24, 131075, 1, 65560, 131075, 1, 131096, 131075, 1, 327704, 131075, 1, 393240, 131075, 1, 458776, 131075, 1, 524312, 131075, 1, 589848, 131075, 1, 655384, 131075, 1, 196632, 131075, 1, 262168, 131075, 1, 458748, 131075, 1)
 
 [node name="Player" parent="." instance=ExtResource("3_o5dax")]
 position = Vector2(96, 96)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_6rwjn")
+autoplay = true

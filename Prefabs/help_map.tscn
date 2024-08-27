@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://c82nfgaqt3p7g"]
+[gd_scene load_steps=9 format=3 uid="uid://c82nfgaqt3p7g"]
 
 [ext_resource type="Script" path="res://Scripts/help_map.gd" id="1_578dy"]
 [ext_resource type="PackedScene" uid="uid://v7qctv8pjko6" path="res://Prefabs/tile_map.tscn" id="1_i3vqc"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://b4pxmi6bqqn71" path="res://Prefabs/DarkSpike.tscn" id="4_mwr6g"]
 [ext_resource type="PackedScene" uid="uid://inney27lyxc8" path="res://Prefabs/light_spike.tscn" id="5_8b24q"]
 [ext_resource type="Texture2D" uid="uid://d2sy3vjrbk4gj" path="res://Unzipped Assets/Pixel Caves _ 2D Environments _ Unity Asset Store.jpg" id="7_fjoxl"]
+[ext_resource type="AudioStream" uid="uid://hj158b8pmhku" path="res://Unzipped Assets/Audio/Undertale OST - 017 Snowy.mp3" id="8_exh1t"]
 
 [node name="HelpMap" type="Node2D"]
 script = ExtResource("1_578dy")
@@ -68,5 +69,9 @@ position = Vector2(944, 536)
 position = Vector2(872, 368)
 scale = Vector2(2.53261, 2.08575)
 texture = ExtResource("7_fjoxl")
+
+[node name="HelpmapAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_exh1t")
+autoplay = true
 
 [connection signal="pressed" from="Return to menu button" to="." method="_on_return_to_menu_button_pressed"]

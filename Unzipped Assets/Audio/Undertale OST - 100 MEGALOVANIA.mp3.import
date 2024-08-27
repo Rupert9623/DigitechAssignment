@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dmqdhw7vue8ui"
+path="res://.godot/imported/Undertale OST - 100 MEGALOVANIA.mp3-525481e927bc2cd3d7c87f65b16ab57a.mp3str"
+
+[deps]
+
+source_file="res://Unzipped Assets/Audio/Undertale OST - 100 MEGALOVANIA.mp3"
+dest_files=["res://.godot/imported/Undertale OST - 100 MEGALOVANIA.mp3-525481e927bc2cd3d7c87f65b16ab57a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,6 +1,6 @@
 extends Area2D
-
-@export var speed = 5
+class_name Enemy
+@export var speed = 2
 
 
 # Called when the node enters the scene tree for the first time.
