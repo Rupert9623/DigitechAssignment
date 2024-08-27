@@ -2,5 +2,5 @@ extends Area2D
 
 
 
-func _on_body_entered(body: Node2D):
-		body.respawn()
+func _on_body_entered(_body: Node2D):
+		print("ouch")

@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Scripts/arrow.gd" id="1_t8paf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qi8yt"]
-size = Vector2(40, 205)
+size = Vector2(40, 61)
 
 [node name="Arrow" type="Area2D"]
 rotation = -1.5708
@@ -13,7 +13,7 @@ script = ExtResource("1_t8paf")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(12, -22.5)
+position = Vector2(12, -94.5)
 shape = SubResource("RectangleShape2D_qi8yt")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
