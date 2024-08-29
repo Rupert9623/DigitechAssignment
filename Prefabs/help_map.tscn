@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://c82nfgaqt3p7g"]
+[gd_scene load_steps=15 format=3 uid="uid://c82nfgaqt3p7g"]
 
 [ext_resource type="Script" path="res://Scripts/help_map.gd" id="1_578dy"]
 [ext_resource type="PackedScene" uid="uid://v7qctv8pjko6" path="res://Prefabs/tile_map.tscn" id="1_i3vqc"]
@@ -6,8 +6,26 @@
 [ext_resource type="Texture2D" uid="uid://bg5rhg7lrthwo" path="res://Unzipped Assets/pc-keyboard-arrow-keys-linear-icon-isolated-on-white-background-free-vector.jpg" id="3_o4cwn"]
 [ext_resource type="PackedScene" uid="uid://b4pxmi6bqqn71" path="res://Prefabs/DarkSpike.tscn" id="4_mwr6g"]
 [ext_resource type="PackedScene" uid="uid://inney27lyxc8" path="res://Prefabs/light_spike.tscn" id="5_8b24q"]
+[ext_resource type="FontFile" uid="uid://b03no51yyvvf3" path="res://Unzipped Assets/kenney_space-shooter-redux (1)/Bonus/kenvector_future_thin.ttf" id="6_7g7gm"]
+[ext_resource type="FontFile" uid="uid://c8dd6b8uf8irk" path="res://Unzipped Assets/kenney_space-shooter-redux (1)/Bonus/kenvector_future.ttf" id="6_e8va1"]
 [ext_resource type="Texture2D" uid="uid://d2sy3vjrbk4gj" path="res://Unzipped Assets/Pixel Caves _ 2D Environments _ Unity Asset Store.jpg" id="7_fjoxl"]
 [ext_resource type="AudioStream" uid="uid://hj158b8pmhku" path="res://Unzipped Assets/Audio/Undertale OST - 017 Snowy.mp3" id="8_exh1t"]
+
+[sub_resource type="Theme" id="Theme_xolhm"]
+default_font = ExtResource("6_e8va1")
+default_font_size = 40
+
+[sub_resource type="Theme" id="Theme_b83yn"]
+default_font = ExtResource("6_7g7gm")
+default_font_size = 20
+
+[sub_resource type="Theme" id="Theme_kwugj"]
+default_font = ExtResource("6_e8va1")
+default_font_size = 20
+
+[sub_resource type="Theme" id="Theme_fjlvr"]
+default_font = ExtResource("6_7g7gm")
+default_font_size = 20
 
 [node name="HelpMap" type="Node2D"]
 script = ExtResource("1_578dy")
@@ -19,24 +37,27 @@ layer_0/tile_data = PackedInt32Array(786431, 131072, 1, 851967, 131072, 1, 72089
 position = Vector2(8, 632)
 
 [node name="HowToMove" type="Sprite2D" parent="."]
-position = Vector2(163, 360)
+position = Vector2(224, 232)
 scale = Vector2(0.230208, 0.160417)
 texture = ExtResource("3_o4cwn")
 
 [node name="Return to menu button" type="Button" parent="."]
-offset_left = 1464.0
+offset_left = 1440.0
 offset_top = 408.0
-offset_right = 1792.0
+offset_right = 1768.0
 offset_bottom = 568.0
-text = "Go back to main menu
+theme = SubResource("Theme_xolhm")
+text = "Go bacK to 
+main menu
 "
 
-[node name="How to Move button" type="Button" parent="."]
-offset_left = 48.0
-offset_top = 432.0
-offset_right = 416.0
-offset_bottom = 528.0
-text = "How to move
+[node name="How to Move sign" type="Button" parent="."]
+offset_left = 32.0
+offset_top = 384.0
+offset_right = 400.0
+offset_bottom = 480.0
+theme = SubResource("Theme_b83yn")
+text = "How to move ^
 Jump over these bolards
 "
 
@@ -45,18 +66,11 @@ offset_left = 1080.0
 offset_top = 384.0
 offset_right = 1312.0
 offset_bottom = 512.0
+theme = SubResource("Theme_kwugj")
 text = "Dont fall in the Hole!!!"
 
 [node name="Enemy" parent="." instance=ExtResource("4_mwr6g")]
 position = Vector2(704, 720)
-
-[node name="Cant touch this" type="Button" parent="."]
-offset_left = 560.0
-offset_top = 392.0
-offset_right = 920.0
-offset_bottom = 504.0
-text = "Dont touch the spike!
-Watch out! in the real game you will lose health!"
 
 [node name="Light_spike" parent="." instance=ExtResource("5_8b24q")]
 position = Vector2(944, 536)
@@ -66,12 +80,21 @@ position = Vector2(944, 536)
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(872, 368)
-scale = Vector2(2.53261, 2.08575)
+position = Vector2(856, 368)
+scale = Vector2(2.53261, 2.16365)
 texture = ExtResource("7_fjoxl")
 
 [node name="HelpmapAudio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("8_exh1t")
 autoplay = true
+
+[node name="Can\'t Touch this" type="Button" parent="."]
+offset_left = 464.0
+offset_top = 392.0
+offset_right = 1051.0
+offset_bottom = 446.0
+theme = SubResource("Theme_fjlvr")
+text = "Dont touch the spike!
+Watch out! in the real game you will lose health!"
 
 [connection signal="pressed" from="Return to menu button" to="." method="_on_return_to_menu_button_pressed"]

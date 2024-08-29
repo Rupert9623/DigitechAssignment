@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://db5onr6ofgniv"
+path="res://.godot/imported/terraria-hurt-made-with-Voicemod.mp3-4484a704cbb582cb505d7dc1a99b5fbb.mp3str"
+
+[deps]
+
+source_file="res://Unzipped Assets/terraria-hurt-made-with-Voicemod.mp3"
+dest_files=["res://.godot/imported/terraria-hurt-made-with-Voicemod.mp3-4484a704cbb582cb505d7dc1a99b5fbb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
