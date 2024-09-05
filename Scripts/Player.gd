@@ -9,8 +9,8 @@ var Health =  10
 func _ready():
 	health_bar.value = Health
 
-const SPEED = 600.0
-const JUMP_VELOCITY = -800.0
+const SPEED = 800.0
+const JUMP_VELOCITY = -1000.0
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
@@ -58,11 +58,20 @@ func respawn():
 
 
 func _on_area_2d_area_entered(area):
-	if area is Enemy:
+	if area is Arrow:
+		$PlayerHurt.play()
 		Health -=1
 		health_bar.value = Health
-	if area is ArrowRight:
+	if area is Arrow_Direct_right:
+		$PlayerHurt.play()
 		Health -=1
+		health_bar.value = Health
+	if area is RockDown:
+		$PlayerHurt.play()
+		Health -=2
+		health_bar.value = Health
+	if area is Heal:
+		Health += 5
 		health_bar.value = Health
 func _process(_delta):
 	if Health == 0:

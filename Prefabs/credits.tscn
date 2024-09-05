@@ -55,7 +55,7 @@ Music: All music sorced from the website https://archive.org/details/undertaleor
 https://tuna.voicemod.net/sound/1af5a7bd-a444-47b4-9196-15b292643ee4
 
 Assets made by me used the website: Piskel to help make them
-Game inspired by Bad Time Simulator (Sans Fight) (jcw87.github.io) or otherwises the sans fight from Undertale. "
+Game inspired by Bad Time Simulator (Sans Fight) (jcw87.github.io) or otherwise the sans fight from Undertale. "
 
 [node name="Back To menu" type="Button" parent="."]
 offset_left = 256.0

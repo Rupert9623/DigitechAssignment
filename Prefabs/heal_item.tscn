@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://d4ermhqileswl"]
+
+[ext_resource type="Script" path="res://Scripts/HealItem.gd" id="1_j4anu"]
+[ext_resource type="Texture2D" uid="uid://crx864uqix41c" path="res://Unzipped Assets/kenney_space-shooter-redux (1)/PNG/Power-ups/shield_gold.png" id="2_252gq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y6vbk"]
+size = Vector2(144, 144)
+
+[node name="HealItem" type="Area2D"]
+script = ExtResource("1_j4anu")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_y6vbk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3.8147e-06, 3.8147e-06)
+scale = Vector2(4.26667, 4.26667)
+texture = ExtResource("2_252gq")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

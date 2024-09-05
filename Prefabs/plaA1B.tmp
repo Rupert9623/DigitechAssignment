@@ -1,8 +1,9 @@
-[gd_scene load_steps=22 format=3 uid="uid://c3hpavbfwam7"]
+[gd_scene load_steps=23 format=3 uid="uid://c3hpavbfwam7"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_bpkap"]
 [ext_resource type="AudioStream" uid="uid://db5onr6ofgniv" path="res://Unzipped Assets/terraria-hurt-made-with-Voicemod.mp3" id="3_0xxhr"]
 [ext_resource type="Texture2D" uid="uid://c4x03l5b5m6kk" path="res://Unzipped Assets/kenney_toon-characters-1/Male adventurer/Tilesheet/character_maleAdventurer_sheetHD.png" id="3_xwi07"]
+[ext_resource type="Script" path="res://Scripts/PlayerHurt.gd" id="4_2vse3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mqpfh"]
 bg_color = Color(0, 0, 0, 1)
@@ -168,8 +169,8 @@ shape = SubResource("RectangleShape2D_8btcf")
 position = Vector2(0, 44)
 shape = SubResource("RectangleShape2D_kbkky")
 
-[node name="PlayerHurt" type="AudioStreamPlayer2D" parent="."]
+[node name="PlayerHurt" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_0xxhr")
-volume_db = 24.0
+script = ExtResource("4_2vse3")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

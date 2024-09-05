@@ -1,7 +1,6 @@
 extends Area2D
-class_name Arrow
+class_name Heal
 @export var speed = 20
-
 
 
 # Called when the node enters the scene tree for the first time.
@@ -15,10 +14,6 @@ func _process(_delta):
 
 
 
-
-
-
-
-func _on_body_entered(body):
-	if body.name == 'Player':
+func _on_area_entered(area):
+	if area is player:
 		queue_free()

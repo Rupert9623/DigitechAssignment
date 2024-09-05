@@ -1,6 +1,6 @@
 extends Area2D
-class_name Arrow
-@export var speed = 20
+class_name RockDown
+@export var speed = 10
 
 
 
@@ -11,14 +11,5 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	position.x -= speed
+	position.y += speed
 
-
-
-
-
-
-
-func _on_body_entered(body):
-	if body.name == 'Player':
-		queue_free()

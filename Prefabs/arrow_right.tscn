@@ -4,19 +4,19 @@
 [ext_resource type="Texture2D" uid="uid://cg0tq5korfujy" path="res://Unzipped Assets/R (1).png" id="2_7h52c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a7nhw"]
-size = Vector2(20, 22)
+size = Vector2(24, 22)
 
 [node name="ArrowRight" type="Area2D"]
 script = ExtResource("1_urh2h")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(33, 5)
+position = Vector2(44, 5)
 shape = SubResource("RectangleShape2D_a7nhw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0.591235, -0.198424)
+position = Vector2(-8.41894, -0.198457)
 rotation = 1.5708
-scale = Vector2(0.0375359, 0.0296776)
+scale = Vector2(0.0375359, 0.0481481)
 texture = ExtResource("2_7h52c")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

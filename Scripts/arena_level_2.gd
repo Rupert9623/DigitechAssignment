@@ -12,17 +12,9 @@ func _ready():
 
 	
 func _update_ui():
-	$GameUi2/ScoreLabel2.text = "SCORE: "+ str(score)
+	$GameUi3/ScoreLabel3.text = "SCORE: "+ str(score)
 
-func _on_score_timer_timeout():
-	print("Score +1")
-	score += 1
-	_update_ui()
-	if score == 60:
-		get_tree().change_scene_to_file("res://Prefabs/arena_level_2.tscn")
-	
-
-func _on_enemy_timer_timeout():
+func _on_arrow_timer_timeout():
 	var enemy = ArrowPrefab.instantiate()
 	var randomY = randi_range (70,760)
 	enemy.position = Vector2(1680, randomY)
@@ -31,4 +23,12 @@ func _on_enemy_timer_timeout():
 	var RandomY2 = randi_range (70, 760)
 	enemyR.position = Vector2(-2, RandomY2)
 	add_child(enemyR)
+
+
+func _on_score_timer_3_timeout():
+	print("Score +1")
+	score += 1
+	_update_ui()
+	if score == 60:
+		get_tree().change_scene_to_file("res://Prefabs/arena_level_2.tscn")
 	
