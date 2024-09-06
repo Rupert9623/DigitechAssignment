@@ -4,6 +4,7 @@ var score = 0
 
 @onready var ArrowPrefab = preload("res://Prefabs/arrow.tscn")
 @onready var ArrowRight  = preload("res://Prefabs/arrow_right.tscn")
+@onready var RockPrefab = preload("res://Prefabs/rock.tscn")
 
 func _on_button_pressed():
 	get_tree().change_scene_to_file("res://Prefabs/arena.tscn")
@@ -32,3 +33,10 @@ func _on_score_timer_3_timeout():
 	if score == 60:
 		get_tree().change_scene_to_file("res://Prefabs/arena_level_2.tscn")
 	
+
+
+func _on_rock_timer_timeout():
+	var enemy = RockPrefab.instantiate()
+	var randomX = randi_range (70,1624)
+	enemy.position = Vector2(randomX, -70)
+	add_child(enemy)

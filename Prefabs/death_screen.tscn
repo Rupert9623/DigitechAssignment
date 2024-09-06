@@ -2,15 +2,15 @@
 
 [ext_resource type="Script" path="res://Scripts/death_screen.gd" id="1_6fe65"]
 [ext_resource type="Texture2D" uid="uid://ceovcw7hm60ol" path="res://Unzipped Assets/startups_from_hell__underground_arena.png" id="1_ywgxj"]
-[ext_resource type="FontFile" uid="uid://c8dd6b8uf8irk" path="res://Unzipped Assets/kenney_space-shooter-redux (1)/Bonus/kenvector_future.ttf" id="2_dcqqe"]
+[ext_resource type="FontFile" uid="uid://c6iqh5dfh3512" path="res://Unzipped Assets/NotJamGlasgow13/Not Jam Glasgow 13.ttf" id="3_lc0q5"]
 [ext_resource type="AudioStream" uid="uid://dvrqdqhwq2yd8" path="res://Unzipped Assets/Undertale OST - 004 Fallen Down.mp3" id="4_5qehs"]
 
 [sub_resource type="Theme" id="Theme_ok4ai"]
-default_font = ExtResource("2_dcqqe")
+default_font = ExtResource("3_lc0q5")
 default_font_size = 40
 
 [sub_resource type="Theme" id="Theme_epf8u"]
-default_font = ExtResource("2_dcqqe")
+default_font = ExtResource("3_lc0q5")
 default_font_size = 40
 
 [node name="Death Screen" type="Node2D"]

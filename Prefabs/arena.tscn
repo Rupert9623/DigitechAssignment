@@ -5,11 +5,11 @@
 [ext_resource type="Texture2D" uid="uid://ceovcw7hm60ol" path="res://Unzipped Assets/startups_from_hell__underground_arena.png" id="3_3hlyk"]
 [ext_resource type="PackedScene" uid="uid://c3hpavbfwam7" path="res://Prefabs/player.tscn" id="3_o5dax"]
 [ext_resource type="AudioStream" uid="uid://vexlsyl8k5d7" path="res://Unzipped Assets/Undertale OST - 100 MEGALOVANIA.mp3" id="5_270iy"]
-[ext_resource type="FontFile" uid="uid://c8dd6b8uf8irk" path="res://Unzipped Assets/kenney_space-shooter-redux (1)/Bonus/kenvector_future.ttf" id="7_ky0oc"]
+[ext_resource type="FontFile" uid="uid://c6iqh5dfh3512" path="res://Unzipped Assets/NotJamGlasgow13/Not Jam Glasgow 13.ttf" id="6_sqh6g"]
 [ext_resource type="Script" path="res://Scripts/EnemyTimer.gd" id="8_opro0"]
 
 [sub_resource type="Theme" id="Theme_cpmuo"]
-default_font = ExtResource("7_ky0oc")
+default_font = ExtResource("6_sqh6g")
 default_font_size = 40
 
 [node name="Arena" type="Node2D"]

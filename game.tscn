@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://wwb5dl8plh4v"]
+[gd_scene load_steps=9 format=3 uid="uid://wwb5dl8plh4v"]
 
 [ext_resource type="Script" path="res://Scripts/game.gd" id="1_pv0v3"]
 [ext_resource type="PackedScene" uid="uid://c3hpavbfwam7" path="res://Prefabs/player.tscn" id="2_7iamt"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://d2sy3vjrbk4gj" path="res://Unzipped Assets/Pixel Caves _ 2D Environments _ Unity Asset Store.jpg" id="3_a181u"]
 [ext_resource type="Script" path="res://Scripts/enemy_timer.gd" id="6_1bd04"]
 [ext_resource type="Theme" uid="uid://dys1jqy51wkyw" path="res://Prefabs/new_theme.tres" id="6_ndj8f"]
+[ext_resource type="FontFile" uid="uid://c6iqh5dfh3512" path="res://Unzipped Assets/NotJamGlasgow13/Not Jam Glasgow 13.ttf" id="7_xbh5r"]
 [ext_resource type="AudioStream" uid="uid://8ywrswqc6yuj" path="res://Unzipped Assets/Undertale OST - 059 Spider Dance.mp3" id="8_rl10t"]
 
 [node name="Game" type="Node2D"]
@@ -49,6 +50,7 @@ offset_left = 632.0
 offset_top = 8.0
 offset_right = 1039.0
 offset_bottom = 60.0
+theme_override_fonts/font = ExtResource("7_xbh5r")
 text = "SCCORE : 0000"
 horizontal_alignment = 1
 vertical_alignment = 1

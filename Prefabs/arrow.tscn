@@ -21,5 +21,4 @@ position = Vector2(1.19209e-06, -1.52588e-05)
 scale = Vector2(0.0752941, 0.0893023)
 texture = ExtResource("1_8pb42")
 
-[connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

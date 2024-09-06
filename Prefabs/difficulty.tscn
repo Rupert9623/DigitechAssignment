@@ -1,0 +1,84 @@
+[gd_scene load_steps=10 format=3 uid="uid://g4thb6c0xldb"]
+
+[ext_resource type="Script" path="res://Scripts/difficulty.gd" id="1_1jubq"]
+[ext_resource type="Texture2D" uid="uid://ceovcw7hm60ol" path="res://Unzipped Assets/startups_from_hell__underground_arena.png" id="1_ishwr"]
+[ext_resource type="FontFile" uid="uid://c6iqh5dfh3512" path="res://Unzipped Assets/NotJamGlasgow13/Not Jam Glasgow 13.ttf" id="2_hih6n"]
+[ext_resource type="PackedScene" uid="uid://c3hpavbfwam7" path="res://Prefabs/player.tscn" id="3_dg237"]
+[ext_resource type="PackedScene" uid="uid://v7qctv8pjko6" path="res://Prefabs/tile_map.tscn" id="4_bu5k6"]
+[ext_resource type="AudioStream" uid="uid://uxug2o1yblk6" path="res://Unzipped Assets/Undertale OST - 031 Waterfall.mp3" id="5_4y28n"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_if2ji"]
+bg_color = Color(0, 1, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qnwpl"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dcelx"]
+bg_color = Color(1, 0, 0, 1)
+
+[node name="Difficulty" type="Node2D"]
+script = ExtResource("1_1jubq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(704, 384)
+scale = Vector2(2.79762, 2.45513)
+texture = ExtResource("1_ishwr")
+
+[node name="EasyButton" type="Button" parent="."]
+offset_left = 64.0
+offset_top = 384.0
+offset_right = 282.0
+offset_bottom = 473.0
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("2_hih6n")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/pressed = SubResource("StyleBoxFlat_if2ji")
+text = "EASY"
+
+[node name="NormalButton" type="Button" parent="."]
+offset_left = 1024.0
+offset_top = 384.0
+offset_right = 1346.0
+offset_bottom = 473.0
+theme_override_fonts/font = ExtResource("2_hih6n")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qnwpl")
+text = "Normal"
+
+[node name="HardButton" type="Button" parent="."]
+offset_left = 576.0
+offset_top = 232.0
+offset_right = 832.0
+offset_bottom = 321.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hih6n")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dcelx")
+text = "HARD
+"
+
+[node name="ChoseWisly" type="Button" parent="."]
+offset_left = 432.0
+offset_top = 152.0
+offset_right = 983.0
+offset_bottom = 201.0
+theme_override_fonts/font = ExtResource("2_hih6n")
+theme_override_font_sizes/font_size = 40
+text = "Make this decision wisely"
+
+[node name="Player" parent="." instance=ExtResource("3_dg237")]
+position = Vector2(696, 640)
+
+[node name="TileMap" parent="." instance=ExtResource("4_bu5k6")]
+layer_0/tile_data = PackedInt32Array(720896, 262149, 3, 720897, 262149, 3, 720898, 262149, 3, 720899, 262149, 3, 720900, 262149, 3, 720902, 262149, 3, 720901, 262149, 3, 720903, 262149, 3, 720904, 262149, 3, 720905, 262149, 3, 720906, 262149, 3, 720907, 262149, 3, 720908, 262149, 3, 720909, 262149, 3, 720910, 262149, 3, 720912, 262149, 3, 720911, 262149, 3, 720913, 262149, 3, 720914, 262149, 3, 720915, 262149, 3, 20, 131077, 1, 65556, 131077, 1, 131092, 131077, 1, 196628, 131077, 1, 262164, 131077, 1, 327700, 131077, 1, 393236, 131077, 1, 458772, 131077, 1, 524308, 131077, 1, 589844, 131077, 1, 655380, 131077, 1, 65535, 131077, 0, 131071, 131077, 0, 196607, 131077, 0, 262143, 131077, 0, 327679, 131077, 0, 393215, 131077, 0, 458751, 131077, 0, 524287, 131077, 0, 589823, 131077, 0, 655359, 131077, 0, 720895, 131077, 0, -65536, 5, 6, -65535, 5, 6, -65534, 5, 6, -65533, 5, 6, -65532, 5, 6, -65531, 5, 6, -65530, 5, 6, -65529, 5, 6, -65528, 5, 6, -65527, 5, 6, -65526, 5, 6, -65525, 5, 6, -65524, 5, 6, -65523, 5, 6, -65522, 5, 6, -65521, 5, 6, -65520, 5, 6, -65519, 5, 6, -65518, 5, 6, -65517, 5, 6, -1, 5, 5, 786431, 5, 5, 720916, 5, 5, -65516, 5, 5, -65515, 5, 5, 21, 5, 5, 65557, 5, 5, 131093, 5, 5, 196629, 5, 5, 262165, 5, 5, 327701, 5, 5, 393237, 5, 5, 458773, 5, 5, 524309, 5, 5, 589845, 5, 5, 655381, 5, 5, 720917, 5, 5, -65514, 5, 5, 22, 5, 5, 65558, 5, 5, 131094, 5, 5, 196630, 5, 5, 262166, 5, 5, 327702, 5, 5, 393238, 5, 5, 458774, 5, 5, 524310, 5, 5, 589846, 5, 5, 655382, 5, 5, 720918, 5, 5, -65513, 5, 5, 23, 5, 5, 65559, 5, 5, 131095, 5, 5, 196631, 5, 5, 262167, 5, 5, 327703, 5, 5, 393239, 5, 5, 458775, 5, 5, 524311, 5, 5, 589847, 5, 5, 655383, 5, 5, 720919, 5, 5, -65512, 5, 5, 24, 5, 5, 65560, 5, 5, 131096, 5, 5, 196632, 5, 5, 262168, 5, 5, 327704, 5, 5, 393240, 5, 5, 458776, 5, 5, 524312, 5, 5, 589848, 5, 5, 655384, 5, 5, 720920, 5, 5, -65511, 5, 5, 25, 5, 5, 65561, 5, 5, 131097, 5, 5, 196633, 5, 5, 262169, 5, 5, 327705, 5, 5, 393241, 5, 5, 458777, 5, 5, 524313, 5, 5, 589849, 5, 5, 655385, 5, 5, 720921, 5, 5, -65510, 5, 5, 26, 5, 5, 65562, 5, 5, 131098, 5, 5, 196634, 5, 5, 262170, 5, 5, 327706, 5, 5, 393242, 5, 5, 458778, 5, 5, 524314, 5, 5, 589850, 5, 5, 655386, 5, 5, 720922, 5, 5, -65509, 5, 5, 27, 5, 5, 65563, 5, 5, 131099, 5, 5, 196635, 5, 5, 262171, 5, 5, 327707, 5, 5, 393243, 5, 5, 458779, 5, 5, 524315, 5, 5, 589851, 5, 5, 655387, 5, 5, 720923, 5, 5, -65508, 5, 5, 28, 5, 5, 65564, 5, 5, 131100, 5, 5, 196636, 5, 5, 262172, 5, 5, 327708, 5, 5, 393244, 5, 5, 458780, 5, 5, 524316, 5, 5, 589852, 5, 5, 655388, 5, 5, 720924, 5, 5, -65507, 5, 5, 29, 5, 5, 65565, 5, 5, 131101, 5, 5, 196637, 5, 5, 262173, 5, 5, 327709, 5, 5, 393245, 5, 5, 458781, 5, 5, 524317, 5, 5, 589853, 5, 5, 655389, 5, 5, 720925, 5, 5, -65506, 5, 5, 30, 5, 5, 65566, 5, 5, 131102, 5, 5, 196638, 5, 5, 262174, 5, 5, 327710, 5, 5, 393246, 5, 5, 458782, 5, 5, 524318, 5, 5, 589854, 5, 5, 655390, 5, 5, 720926, 5, 5, -65505, 5, 5, 31, 5, 5, 65567, 5, 5, 131103, 5, 5, 196639, 5, 5, 262175, 5, 5, 327711, 5, 5, 393247, 5, 5, 458783, 5, 5, 524319, 5, 5, 589855, 5, 5, 655391, 5, 5, 720927, 5, 5, -65504, 5, 5, 32, 5, 5, 65568, 5, 5, 131104, 5, 5, 196640, 5, 5, 262176, 5, 5, 327712, 5, 5, 393248, 5, 5, 458784, 5, 5, 524320, 5, 5, 589856, 5, 5, 655392, 5, 5, 720928, 5, 5, -65503, 5, 5, 33, 5, 5, 65569, 5, 5, 131105, 5, 5, 196641, 5, 5, 262177, 5, 5, 327713, 5, 5, 393249, 5, 5, 458785, 5, 5, 524321, 5, 5, 589857, 5, 5, 655393, 5, 5, 720929, 5, 5, -65502, 5, 5, 34, 5, 5, 65570, 5, 5, 131106, 5, 5, 196642, 5, 5, 262178, 5, 5, 327714, 5, 5, 393250, 5, 5, 458786, 5, 5, 524322, 5, 5, 589858, 5, 5, 655394, 5, 5, 720930, 5, 5)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_4y28n")
+volume_db = 15.0
+autoplay = true
+
+[connection signal="pressed" from="EasyButton" to="." method="_on_easy_button_pressed"]
+[connection signal="pressed" from="NormalButton" to="." method="_on_normal_button_pressed"]
+[connection signal="pressed" from="HardButton" to="." method="_on_hard_button_pressed"]

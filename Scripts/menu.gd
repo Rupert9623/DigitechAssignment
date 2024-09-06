@@ -7,4 +7,4 @@ func _on_help_map_button_pressed():
 	get_tree().change_scene_to_file("res://Prefabs/help_map.tscn")
 
 func _on_play_game_button_pressed():
-	get_tree().change_scene_to_file("res://game.tscn")
+	get_tree().change_scene_to_file("res://Prefabs/difficulty.tscn")

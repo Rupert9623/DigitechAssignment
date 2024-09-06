@@ -1,14 +1,11 @@
 extends CharacterBody2D
-class_name player
-@onready var health_bar = $HealthBar
 var start_position = Vector2(840,582)
-var Health =  10
 @onready var anim : AnimatedSprite2D = $AnimatedSprite2D
+var lineBreak = 10
 	
 	
 func _ready():
-	health_bar.value = Health
-
+	print("HelpMap")
 const SPEED = 800.0
 const JUMP_VELOCITY = -1000.0
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -47,26 +44,6 @@ func _physics_process(delta):
 		respawn()
 func respawn():
 	position = start_position
-
-func _on_area_2d_area_entered(area):
-	if area is Arrow:
-		$PlayerHurt.play()
-		Health -=1
-		health_bar.value = Health
-	if area is Arrow_Direct_right:
-		$PlayerHurt.play()
-		Health -=1
-		health_bar.value = Health
-	if area is RockDown:
-		$PlayerHurt.play()
-		Health -=2
-		health_bar.value = Health
-	if area is Heal:
-		Health += 5
-		health_bar.value = Health
-func _process(_delta):
-	if Health <= 0:
-		get_tree().change_scene_to_file("res://Prefabs/death_screen.tscn")
 func Jump_cut():
 	if velocity.y<0:
 		velocity.y = 2

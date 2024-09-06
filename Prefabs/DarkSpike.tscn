@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b4pxmi6bqqn71"]
 
 [ext_resource type="Script" path="res://Scripts/Dark_spike.gd" id="1_6f1hd"]
-[ext_resource type="Texture2D" uid="uid://b5ktnynevyikx" path="res://Unzipped Assets/New Piskel.png" id="2_h8l0h"]
+[ext_resource type="Texture2D" uid="uid://b371lkcs0sr6u" path="res://Unzipped Assets/Dark_spike.png" id="2_h8l0h"]
 
 [node name="DarkSpike" type="Area2D"]
 script = ExtResource("1_6f1hd")
