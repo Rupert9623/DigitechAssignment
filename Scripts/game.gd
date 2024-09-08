@@ -9,6 +9,8 @@ func _on_button_pressed():
 	get_tree().change_scene_to_file("res://Prefabs/arena.tscn")
 func _ready():
 	_update_ui()
+func _process(_delta):
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 
 
 
@@ -46,3 +48,7 @@ func _on_heal_timer_timeout():
 
 func _on_dev_skip_pressed():
 	get_tree().change_scene_to_file("res://Prefabs/arena_level_2.tscn")
+
+
+func _on_dev_skip_1_pressed():
+	get_tree().change_scene_to_file("res://Prefabs/arena.tscn")

@@ -9,16 +9,19 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	pass
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 
 func _on_easy_button_pressed():
 	get_tree().change_scene_to_file("res://game.tscn")
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 
 
 func _on_normal_button_pressed():
 	get_tree().change_scene_to_file("res://game.tscn")
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 
 
 func _on_hard_button_pressed():
 	get_tree().change_scene_to_file("res://game.tscn")
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)

@@ -77,11 +77,27 @@ wait_time = 31.0
 autostart = true
 
 [node name="DevSkip" type="Button" parent="."]
-offset_left = 888.0
+offset_left = 704.0
 offset_top = 464.0
 offset_right = 1000.0
-offset_bottom = 495.0
+offset_bottom = 584.0
 text = "Arena Level 2
+"
+
+[node name="HealthRamp" type="Timer" parent="."]
+wait_time = 31.0
+autostart = true
+
+[node name="UnRamp" type="Timer" parent="."]
+wait_time = 35.0
+autostart = true
+
+[node name="DevSkip1" type="Button" parent="."]
+offset_left = 744.0
+offset_top = 352.0
+offset_right = 928.0
+offset_bottom = 472.0
+text = "Arena
 "
 
 [connection signal="timeout" from="enemy_timer" to="." method="_on_enemy_timer_timeout"]
@@ -91,3 +107,6 @@ text = "Arena Level 2
 [connection signal="timeout" from="LowArrowTimer" to="." method="_on_low_arrow_timer_timeout"]
 [connection signal="timeout" from="HealTimer" to="." method="_on_heal_timer_timeout"]
 [connection signal="pressed" from="DevSkip" to="." method="_on_dev_skip_pressed"]
+[connection signal="timeout" from="HealthRamp" to="enemy_timer" method="_on_health_ramp_timeout"]
+[connection signal="timeout" from="UnRamp" to="enemy_timer" method="_on_un_ramp_timeout"]
+[connection signal="pressed" from="DevSkip1" to="." method="_on_dev_skip_1_pressed"]

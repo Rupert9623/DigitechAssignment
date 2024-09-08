@@ -4,12 +4,12 @@
 [ext_resource type="PackedScene" uid="uid://v7qctv8pjko6" path="res://Prefabs/tile_map.tscn" id="1_i3vqc"]
 [ext_resource type="Texture2D" uid="uid://bg5rhg7lrthwo" path="res://Unzipped Assets/pc-keyboard-arrow-keys-linear-icon-isolated-on-white-background-free-vector.jpg" id="3_o4cwn"]
 [ext_resource type="FontFile" uid="uid://c6iqh5dfh3512" path="res://Unzipped Assets/NotJamGlasgow13/Not Jam Glasgow 13.ttf" id="5_ajcun"]
+[ext_resource type="Texture2D" uid="uid://c3sgeyqqrtn1s" path="res://Unzipped Assets/c2e4fbe8c20ce87.png" id="7_3f6oq"]
 [ext_resource type="Texture2D" uid="uid://d2sy3vjrbk4gj" path="res://Unzipped Assets/Pixel Caves _ 2D Environments _ Unity Asset Store.jpg" id="7_fjoxl"]
 [ext_resource type="AudioStream" uid="uid://hj158b8pmhku" path="res://Unzipped Assets/Audio/Undertale OST - 017 Snowy.mp3" id="8_exh1t"]
 [ext_resource type="Texture2D" uid="uid://cg0tq5korfujy" path="res://Unzipped Assets/R (1).png" id="9_pjvlq"]
 [ext_resource type="Texture2D" uid="uid://b6b3ewdmw7bbt" path="res://Unzipped Assets/kenney_space-shooter-redux (1)/PNG/Meteors/meteorGrey_big4.png" id="10_btdaf"]
 [ext_resource type="PackedScene" uid="uid://doblelpd7cd8m" path="res://Prefabs/help_map_player.tscn" id="10_h6u4d"]
-[ext_resource type="Texture2D" uid="uid://crx864uqix41c" path="res://Unzipped Assets/kenney_space-shooter-redux (1)/PNG/Power-ups/shield_gold.png" id="11_gkpew"]
 
 [sub_resource type="Theme" id="Theme_xolhm"]
 default_font = ExtResource("5_ajcun")
@@ -47,11 +47,13 @@ MAIN MENU
 [node name="How to Move sign" type="Button" parent="."]
 offset_left = -64.0
 offset_top = 480.0
-offset_right = 210.0
-offset_bottom = 576.0
+offset_right = 240.0
+offset_bottom = 600.0
 theme = SubResource("Theme_b83yn")
-text = "How to move ^
-Jump over these bolards
+text = "How to move  ^
+
+Jump over these bolards 
+ ------->
 "
 
 [node name="Dont fall" type="Button" parent="."]
@@ -83,9 +85,9 @@ stream = ExtResource("8_exh1t")
 autoplay = true
 
 [node name="Health Item" type="Sprite2D" parent="."]
-position = Vector2(1603.13, 512)
-scale = Vector2(4.05833, 3.925)
-texture = ExtResource("11_gkpew")
+position = Vector2(1600, 512)
+scale = Vector2(0.261225, 0.237037)
+texture = ExtResource("7_3f6oq")
 
 [node name="Health Explain" type="Button" parent="."]
 offset_left = 1728.0
@@ -94,7 +96,8 @@ offset_right = 2505.0
 offset_bottom = 584.0
 theme_override_fonts/font = ExtResource("5_ajcun")
 theme_override_font_sizes/font_size = 25
-text = "	In the real game this item will heal you,
+text = "	In the real game this item will heal you
+and provide a shild for a small amount of time
 <--------
 	be careful it is very quick to enter and exit the screen"
 
@@ -114,6 +117,7 @@ offset_bottom = 384.0
 theme_override_fonts/font = ExtResource("5_ajcun")
 theme_override_font_sizes/font_size = 25
 text = "In the real game this arrow will hurt you
+The tail of the arrow will not, only the head
 <---------
 Be careful, there are alot
 "

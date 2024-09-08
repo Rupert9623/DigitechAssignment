@@ -59,9 +59,10 @@ func _on_area_2d_area_entered(area):
 		health_bar.value = Health
 	if area is RockDown:
 		$PlayerHurt.play()
-		Health -=2
+		Health -=3
 		health_bar.value = Health
 	if area is Heal:
+		$PlayerHeal.play()
 		Health += 5
 		health_bar.value = Health
 func _process(_delta):
