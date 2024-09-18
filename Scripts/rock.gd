@@ -1,6 +1,6 @@
 extends Area2D
 class_name RockDown
-@export var speed = 10
+@export var speed = 15
 
 
 

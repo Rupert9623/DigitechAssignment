@@ -1,6 +1,4 @@
-extends Area2D
-class_name Arrow_Direct_right
-@export var speed = 20
+extends Timer
 
 
 # Called when the node enters the scene tree for the first time.
@@ -10,8 +8,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	position.x += speed
+	pass
 
-func _on_body_entered(body):
-	if body.name == 'Player':
-		queue_free()
+
+func _on_timeout():
+	set_wait_time(2.5)

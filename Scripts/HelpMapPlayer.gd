@@ -7,7 +7,7 @@ var lineBreak = 10
 func _ready():
 	print("HelpMap")
 const SPEED = 800.0
-const JUMP_VELOCITY = -1000.0
+const JUMP_VELOCITY = -1100
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 

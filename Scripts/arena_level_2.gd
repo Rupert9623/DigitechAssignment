@@ -6,7 +6,9 @@ var score = 0
 @onready var ArrowRight  = preload("res://Prefabs/arrow_right.tscn")
 @onready var RockPrefab = preload("res://Prefabs/rock.tscn")
 @onready var HealthItem = preload("res://Prefabs/heal_item.tscn")
-
+@onready var SpearLeft = preload("res://Prefabs/spear.tscn")
+@onready var SpearRight = preload("res://Prefabs/spear_r.tscn")
+@onready var KnifeDown = preload("res://Prefabs/knife_down.tscn")
 
 func _on_button_pressed():
 	get_tree().change_scene_to_file("res://Prefabs/arena.tscn")
@@ -18,31 +20,9 @@ func _process(_delta):
 func _update_ui():
 	$GameUi3/ScoreLabel3.text = "SCORE: "+ str(score)
 
-func _on_arrow_timer_timeout():
-	var enemy = ArrowPrefab.instantiate()
-	var randomY = randi_range (70,760)
-	enemy.position = Vector2(1680, randomY)
-	add_child(enemy)
-	var enemyR = ArrowRight.instantiate()
-	var RandomY2 = randi_range (70, 760)
-	enemyR.position = Vector2(-2, RandomY2)
-	add_child(enemyR)
-
-
 func _on_score_timer_3_timeout():
-	print("Score +1")
 	score += 1
 	_update_ui()
-	
-	
-
-
-func _on_rock_timer_timeout():
-	var enemy = RockPrefab.instantiate()
-	var randomX = randi_range (70,1624)
-	enemy.position = Vector2(randomX, -70)
-	add_child(enemy)
-
 
 func _on_health_timer_timeout():
 	var Hitem = HealthItem.instantiate()
@@ -50,3 +30,60 @@ func _on_health_timer_timeout():
 	Hitem.position = Vector2(1680, randomy)
 	add_child(Hitem)
 
+func _on_down_enemy_timer_timeout():
+	var rockDown = RockPrefab.instantiate()
+	var randomXR = randi_range (70,1624)
+	rockDown.position = Vector2(randomXR, -70)
+	add_child(rockDown)
+	var knife = KnifeDown.instantiate()
+	var randomXK = randi_range (70,1624)
+	knife.position = Vector2(randomXK, -70)
+	add_child(knife)
+
+
+func _on_enemy_timer_low_timeout():
+	var arrowlow = ArrowPrefab.instantiate()
+	var randomYAL = randi_range (580,700)
+	arrowlow.position = Vector2(1680, randomYAL)
+	add_child(arrowlow)
+	
+	var arrowlowRight = ArrowRight.instantiate()
+	var RandomY2ALR = randi_range (580, 700)
+	arrowlowRight.position = Vector2(-2, RandomY2ALR)
+	add_child(arrowlowRight)
+
+func _on_enemy_timer_high_timeout():
+	
+	var enemyRH = ArrowRight.instantiate()
+	var RandomY2H = randi_range (0,256)
+	enemyRH.position = Vector2(-2, RandomY2H)
+	add_child(enemyRH)
+	
+	var enemyH = ArrowPrefab.instantiate()
+	var randomYH = randi_range (0,256)
+	enemyH.position = Vector2(1680, randomYH)
+	add_child(enemyH)
+
+func _on_enemy_timer_medium_timeout():
+	var enemyRHM = ArrowRight.instantiate()
+	var RandomY2HM = randi_range (300, 580)
+	enemyRHM.position = Vector2(-2, RandomY2HM)
+	add_child(enemyRHM)
+	
+	var enemyHM = ArrowPrefab.instantiate()
+	var randomYHM = randi_range (300,580)
+	enemyHM.position = Vector2(1680, randomYHM)
+	add_child(enemyHM)
+
+
+func _on_arrow_left_timer_timeout():
+	var SpearL = SpearLeft.instantiate()
+	var randomY = randi_range (70,760)
+	SpearL.position = Vector2(1680, randomY)
+	add_child(SpearL)
+
+func _on_arrow_right_timer_timeout():
+	var SpeaRR = SpearRight.instantiate()
+	var RandomY2 = randi_range (70, 760)
+	SpeaRR.position = Vector2(-2, RandomY2)
+	add_child(SpeaRR)

@@ -1,15 +1,14 @@
-extends AudioStreamPlayer
-
+extends Area2D
+class_name Spear
+@export var speed = 20
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
-
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
-
-func _on_credits_button_pressed():
-	pass # Replace with function body.
+func _process(_delta):
+	position.x -= speed
+	
+func _on_body_entered(body):
+	if body.name == 'Player':
+		queue_free()

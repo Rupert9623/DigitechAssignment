@@ -7,17 +7,17 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pass
 
 
 func _on_arrow_ramp_up_1_timeout():
 	print("ramp1")
-	set_wait_time(0.4)
+	set_wait_time(2)
 
 
 
 func _on_arrow_ramp_up_2_timeout():
 	print("ramp1")
-	set_wait_time(0.5)
+	set_wait_time(3)
 

@@ -35,7 +35,7 @@ texture = ExtResource("1_ftkj7")
 [node name="Credits" type="Button" parent="."]
 offset_left = -8.0
 offset_right = 1480.0
-offset_bottom = 606.0
+offset_bottom = 640.0
 theme = SubResource("Theme_0oplb")
 text = " Assets used in production:
 -Space Shooter Redux · Kenney
@@ -58,6 +58,9 @@ All music sorced from:
  website https://archive.org/details/undertaleoriginalsoundtracks
 Sound effect:
 https://tuna.voicemod.net/sound/1af5a7bd-a444-47b4-9196-15b292643ee4
+Background for Bullet Hell arena : https://terraria.fandom.com/wiki/Terraria_Wiki
+Tilemap for Bullet Hell arena: https://tilation.itch.io/multi-size-mythical-brick-connections
+Music for Bullet Hell arena: https://archive.org/details/05-underground/13+Boss+3.mp3
 
 Assets made by me used the website: Piskel to help make them
 Some assets were not used but helped create the overal game
@@ -66,9 +69,9 @@ or otherwise the sans fight from Undertale. "
 
 [node name="Back To menu" type="Button" parent="."]
 offset_left = 264.0
-offset_top = 616.0
+offset_top = 640.0
 offset_right = 1288.0
-offset_bottom = 736.0
+offset_bottom = 760.0
 theme = SubResource("Theme_g1gol")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_tl55o")
 text = "Go Back to main menu"

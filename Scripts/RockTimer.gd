@@ -7,11 +7,11 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pass
 
 
 func _on_rock_ramp_up_timeout():
 	print("ramp1")
-	set_wait_time(3)
+	set_wait_time(2.5)
 

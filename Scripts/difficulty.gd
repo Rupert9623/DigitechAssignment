@@ -11,17 +11,11 @@ func _ready():
 func _process(_delta):
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
-
-func _on_easy_button_pressed():
-	get_tree().change_scene_to_file("res://game.tscn")
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
-
-
 func _on_normal_button_pressed():
 	get_tree().change_scene_to_file("res://game.tscn")
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 
 
 func _on_hard_button_pressed():
-	get_tree().change_scene_to_file("res://game.tscn")
+	get_tree().change_scene_to_file("res://Prefabs/bullet_hell_arena.tscn")
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)

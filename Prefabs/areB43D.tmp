@@ -51,36 +51,18 @@ volume_db = 10.0
 autoplay = true
 
 [node name="HealthTimer" type="Timer" parent="."]
-wait_time = 25.0
+wait_time = 30.0
 autostart = true
 
 [node name="EnemyTimerHigh" type="Timer" parent="."]
-wait_time = 5.0
-autostart = true
 
 [node name="EnemyTimerMedium" type="Timer" parent="."]
-wait_time = 5.0
-autostart = true
 
 [node name="EnemyTimerLow" type="Timer" parent="."]
-wait_time = 5.0
-autostart = true
 
 [node name="DownEnemyTimer" type="Timer" parent="."]
 
-[node name="ArrowLeftTimer" type="Timer" parent="."]
-wait_time = 4.0
-autostart = true
-
-[node name="ArrowRightTimer" type="Timer" parent="."]
-wait_time = 4.0
-autostart = true
-
 [connection signal="timeout" from="ScoreTimer3" to="." method="_on_score_timer_3_timeout"]
 [connection signal="timeout" from="HealthTimer" to="." method="_on_health_timer_timeout"]
-[connection signal="timeout" from="EnemyTimerHigh" to="." method="_on_enemy_timer_high_timeout"]
-[connection signal="timeout" from="EnemyTimerMedium" to="." method="_on_enemy_timer_medium_timeout"]
 [connection signal="timeout" from="EnemyTimerLow" to="." method="_on_enemy_timer_low_timeout"]
 [connection signal="timeout" from="DownEnemyTimer" to="." method="_on_down_enemy_timer_timeout"]
-[connection signal="timeout" from="ArrowLeftTimer" to="." method="_on_arrow_left_timer_timeout"]
-[connection signal="timeout" from="ArrowRightTimer" to="." method="_on_arrow_right_timer_timeout"]

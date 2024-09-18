@@ -1,16 +1,13 @@
 extends CharacterBody2D
 class_name player
 @onready var health_bar = $HealthBar
+@onready var anim : AnimatedSprite2D = $AnimatedSprite2D
 var start_position = Vector2(840,582)
 var Health =  10
-@onready var anim : AnimatedSprite2D = $AnimatedSprite2D
-	
-	
 func _ready():
 	health_bar.value = Health
-
 const SPEED = 800.0
-const JUMP_VELOCITY = -1000.0
+const JUMP_VELOCITY = -1050.0
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
@@ -61,9 +58,21 @@ func _on_area_2d_area_entered(area):
 		$PlayerHurt.play()
 		Health -=3
 		health_bar.value = Health
+	if area is KnifeDown1:
+		$PlayerHurt.play()
+		Health -= 2
+		health_bar.value = Health
+	if area is Spear:
+		$PlayerHurt.play()
+		Health -= 1
+		health_bar.value = Health
+	if area is SpearR:
+		$PlayerHurt.play()
+		Health -= 1
+		health_bar.value = Health
 	if area is Heal:
 		$PlayerHeal.play()
-		Health += 5
+		Health = 10
 		health_bar.value = Health
 func _process(_delta):
 	if Health <= 0:
@@ -71,3 +80,5 @@ func _process(_delta):
 func Jump_cut():
 	if velocity.y<0:
 		velocity.y = 2
+# Called when the node enters the scene tree for the first time.
+

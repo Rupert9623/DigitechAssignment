@@ -1,21 +1,26 @@
-[gd_scene load_steps=23 format=3 uid="uid://c3hpavbfwam7"]
+[gd_scene load_steps=28 format=3 uid="uid://c3hpavbfwam7"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_bpkap"]
+[ext_resource type="Script" path="res://Scripts/DamageBar Timer.gd" id="2_dj8gf"]
+[ext_resource type="Script" path="res://Scripts/DamageBar.gd" id="2_kygci"]
 [ext_resource type="AudioStream" uid="uid://db5onr6ofgniv" path="res://Unzipped Assets/terraria-hurt-made-with-Voicemod.mp3" id="3_0xxhr"]
 [ext_resource type="Texture2D" uid="uid://c4x03l5b5m6kk" path="res://Unzipped Assets/kenney_toon-characters-1/Male adventurer/Tilesheet/character_maleAdventurer_sheetHD.png" id="3_xwi07"]
 [ext_resource type="AudioStream" uid="uid://6digihxhfgfa" path="res://Unzipped Assets/kenney_space-shooter-redux (1)/Bonus/sfx_shieldUp.ogg" id="4_cqjw5"]
+[ext_resource type="Script" path="res://Scripts/DamageBarRockTimer.gd" id="4_frhcp"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3rdds"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4qorq"]
 bg_color = Color(0, 0, 0, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0, 0, 0, 1)
 expand_margin_left = 2.0
 expand_margin_top = 2.0
 expand_margin_right = 2.0
 expand_margin_bottom = 2.0
+shadow_color = Color(0, 0, 0, 0.27451)
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q0oak"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wbugk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dlw82"]
 bg_color = Color(1, 0.356863, 0.0352941, 1)
@@ -130,14 +135,41 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8btcf"]
-size = Vector2(80, 160)
+size = Vector2(80, 152)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kbkky"]
-size = Vector2(80, 144)
+size = Vector2(96, 168)
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(0, -16)
 script = ExtResource("1_bpkap")
+
+[node name="DamageBar" type="ProgressBar" parent="."]
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -120.0
+offset_top = -96.0
+offset_right = -119.0
+offset_bottom = -95.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_4qorq")
+theme_override_styles/fill = SubResource("StyleBoxFlat_q0oak")
+max_value = 10.0
+value = 6.0
+show_percentage = false
+script = ExtResource("2_kygci")
+
+[node name="DamageBar Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+script = ExtResource("2_dj8gf")
+
+[node name="DamageBarRockTimer" type="Timer" parent="."]
+wait_time = 0.5
+script = ExtResource("4_frhcp")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.75, 0.75)
@@ -153,27 +185,25 @@ offset_left = -120.0
 offset_top = -96.0
 offset_right = 128.0
 offset_bottom = -88.0
-theme_override_styles/background = SubResource("StyleBoxFlat_3rdds")
+theme_override_styles/background = SubResource("StyleBoxEmpty_wbugk")
 theme_override_styles/fill = SubResource("StyleBoxFlat_dlw82")
 max_value = 10.0
 value = 5.0
 show_percentage = false
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-9.53674e-07, 8)
-scale = Vector2(0.916667, 0.9375)
 sprite_frames = SubResource("SpriteFrames_1irmf")
 animation = &"Idle"
 autoplay = "Idle"
 
 [node name="CollisionShapeMain" type="CollisionShape2D" parent="."]
-position = Vector2(0, 48)
+position = Vector2(0, 44)
 shape = SubResource("RectangleShape2D_8btcf")
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShapeMain2" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0, 48)
+position = Vector2(0, 44)
 shape = SubResource("RectangleShape2D_kbkky")
 
 [node name="PlayerHurt" type="AudioStreamPlayer2D" parent="."]
@@ -184,4 +214,8 @@ volume_db = 24.0
 stream = ExtResource("4_cqjw5")
 volume_db = 24.0
 
+[connection signal="timeout" from="DamageBar Timer" to="DamageBar" method="_on_damage_bar_timer_timeout"]
+[connection signal="timeout" from="DamageBarRockTimer" to="DamageBar" method="_on_damage_bar_rock_timer_timeout"]
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="Area2D" to="DamageBar Timer" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="Area2D" to="DamageBarRockTimer" method="_on_area_2d_area_entered"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://g57lqfhgll84"]
+[gd_scene load_steps=9 format=3 uid="uid://g57lqfhgll84"]
 
 [ext_resource type="Script" path="res://Scripts/death_screen.gd" id="1_6fe65"]
 [ext_resource type="Texture2D" uid="uid://ceovcw7hm60ol" path="res://Unzipped Assets/startups_from_hell__underground_arena.png" id="1_ywgxj"]
@@ -6,8 +6,9 @@
 [ext_resource type="AudioStream" uid="uid://bfokx34nnc5hx" path="res://Unzipped Assets/Undertale OST - 097 But the Earth Refused to Die.mp3" id="4_om4kt"]
 
 [sub_resource type="Theme" id="Theme_ok4ai"]
-default_font = ExtResource("3_lc0q5")
-default_font_size = 40
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ydfim"]
+bg_color = Color(1, 1, 1, 1)
 
 [sub_resource type="Theme" id="Theme_epf8u"]
 default_font = ExtResource("3_lc0q5")
@@ -34,6 +35,9 @@ offset_top = 336.0
 offset_right = 720.0
 offset_bottom = 472.0
 theme = SubResource("Theme_ok4ai")
+theme_override_fonts/font = ExtResource("3_lc0q5")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ydfim")
 text = "Main Menu"
 
 [node name="Label" type="Label" parent="."]

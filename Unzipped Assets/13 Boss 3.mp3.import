@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c7bywhmlqjw0v"
+path="res://.godot/imported/13 Boss 3.mp3-a4b26b79930cea43d6e71ee6c26b8ec2.mp3str"
+
+[deps]
+
+source_file="res://Unzipped Assets/13 Boss 3.mp3"
+dest_files=["res://.godot/imported/13 Boss 3.mp3-a4b26b79930cea43d6e71ee6c26b8ec2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

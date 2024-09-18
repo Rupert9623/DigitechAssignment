@@ -21,7 +21,7 @@ window/size/resizable=false
 
 [physics]
 
-2d/default_gravity=900.0
+2d/default_gravity=1000.0
 
 [rendering]
 
