@@ -1,8 +1,8 @@
 [gd_scene load_steps=14 format=3 uid="uid://bvdh68iy7k8c1"]
 
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="1_utdhb"]
-[ext_resource type="Texture2D" uid="uid://d2sy3vjrbk4gj" path="res://Unzipped Assets/Pixel Caves _ 2D Environments _ Unity Asset Store.jpg" id="1_yp1je"]
 [ext_resource type="PackedScene" uid="uid://v7qctv8pjko6" path="res://Prefabs/tile_map.tscn" id="2_4biwv"]
+[ext_resource type="Texture2D" uid="uid://bpsda1e7e68n1" path="res://Unzipped Assets/MenuBackground.png" id="2_4y4dg"]
 [ext_resource type="PackedScene" uid="uid://c3hpavbfwam7" path="res://Prefabs/player.tscn" id="3_2c4st"]
 [ext_resource type="FontFile" uid="uid://c6iqh5dfh3512" path="res://Unzipped Assets/NotJamGlasgow13/Not Jam Glasgow 13.ttf" id="6_lv43v"]
 [ext_resource type="AudioStream" uid="uid://cuexksysehbad" path="res://Unzipped Assets/Audio/Undertale OST - 005 Ruins.mp3" id="8_cc4ku"]
@@ -26,7 +26,7 @@ default_font = ExtResource("6_lv43v")
 default_font_size = 40
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jaqu0"]
-bg_color = Color(1, 1, 1, 1)
+bg_color = Color(1, 0, 0, 1)
 
 [sub_resource type="Theme" id="Theme_08k48"]
 default_font = ExtResource("6_lv43v")
@@ -41,55 +41,59 @@ scroll_offset = Vector2(540.113, 136.506)
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground"]
-position = Vector2(576, 320)
-scale = Vector2(1.55435, 1.5628)
-texture = ExtResource("1_yp1je")
+position = Vector2(836, 380)
+scale = Vector2(1.27492, 1.11016)
+texture = ExtResource("2_4y4dg")
 
 [node name="TileMap" parent="." instance=ExtResource("2_4biwv")]
-layer_0/tile_data = PackedInt32Array(-65536, 4, 2, -65535, 4, 2, -65534, 4, 2, -65533, 4, 2, -65532, 4, 2, -65531, 4, 2, -65530, 4, 2, -65529, 4, 2, -65528, 4, 2, -65527, 4, 2, -65526, 4, 2, -65525, 4, 2, -65524, 4, 2, -65523, 4, 2, -65522, 4, 2, -65521, 4, 2, -65520, 4, 2, -65519, 4, 2, -65518, 4, 2, -65517, 4, 2, 655359, 131076, 0, 589823, 131076, 0, 524287, 131076, 0, 458751, 131076, 0, 393215, 131076, 0, 327679, 131076, 0, 262143, 131076, 0, 196607, 131076, 0, 131071, 131076, 0, 65535, 131076, 0, -1, 65540, 0, 786431, 65536, 1, 851967, 65536, 1, 786432, 65536, 1, 786433, 65536, 1, 786434, 65536, 1, 786435, 65536, 1, 786436, 65536, 1, 786437, 65536, 1, 786438, 65536, 1, 786439, 65536, 1, 786440, 65536, 1, 786441, 65536, 1, 786442, 65536, 1, 786443, 65536, 1, 786444, 65536, 1, 786445, 65536, 1, 786446, 65536, 1, 786447, 65536, 1, 786448, 65536, 1, 786449, 65536, 1, 786450, 65536, 1, 786451, 65536, 1, 720915, 131072, 1, -65516, 4, 2, 720916, 131072, 1, 786452, 131072, 1, 720914, 131072, 1, 720913, 131072, 1, 720912, 131072, 1, 720911, 131072, 1, 720910, 131072, 1, 720909, 131072, 1, 720908, 131072, 1, 720907, 131072, 1, 720906, 131072, 1, 720905, 131072, 1, 720904, 131072, 1, 720903, 131072, 1, 720902, 131072, 1, 720901, 131072, 1, 720900, 131072, 1, 720899, 131072, 1, 720898, 131072, 1, 720897, 131072, 1, 720896, 131072, 1, -65515, 4, 2, 720917, 131072, 1, 786453, 131072, 1, 720918, 131072, 1, 720919, 131072, 1, 720920, 131072, 1, 720921, 131072, 1, 720922, 131072, 1, 655386, 131072, 1, 589850, 131072, 1, 524314, 131072, 1, 458778, 131072, 1, 393242, 131072, 1, 327706, 131072, 1, 262170, 131072, 1, 196634, 131072, 1, 131098, 131072, 1, 65562, 131072, 1, 26, 131072, 1, -65510, 131072, 1, -65511, 131072, 1, -65512, 65540, 1, -65513, 4, 2, -65514, 4, 2, 25, 131072, 1, 65561, 131072, 1, 131097, 131072, 1, 196633, 131072, 1, 262169, 131072, 1, 327705, 131072, 1, 393241, 131072, 1, 458777, 131072, 1, 524313, 131072, 1, 589849, 131072, 1, 24, 131076, 1, 65560, 131076, 1, 131096, 131076, 1, 196632, 131076, 1, 262168, 131076, 1, 327704, 131076, 1, 393240, 131076, 1, 458776, 131076, 1, 524312, 131076, 1, 589848, 131076, 1, 720895, 131076, 0, 655385, 65542, 2, 655384, 131076, 1, 655365, 262147, 3, 655378, 262147, 3, 655366, 262147, 3, 655367, 262147, 3, 655368, 262147, 3, 655369, 262147, 3, 655370, 262147, 3, 655371, 262147, 3, 655372, 262147, 3, 655373, 262147, 3, 655374, 262147, 3, 655375, 262147, 3, 655376, 262147, 3, 655377, 262147, 3, 327684, 65536, 3, 327686, 65536, 3, 327687, 65536, 3, 327699, 65536, 3, 327698, 65536, 3, 327697, 65536, 3, 327696, 65536, 3, 196617, 65536, 3, 196618, 65536, 3, 196619, 65536, 3, 196620, 65536, 3, 196621, 65536, 3, 196622, 65536, 3, 327685, 65536, 3)
+layer_0/tile_data = PackedInt32Array(786431, 5, 5, 851967, 5, 5, 786432, 5, 5, 786433, 5, 5, 786434, 5, 5, 786435, 5, 5, 786436, 5, 5, 786437, 5, 5, 786438, 5, 5, 786439, 5, 5, 786440, 5, 5, 786441, 5, 5, 786442, 5, 5, 786443, 5, 5, 786444, 5, 5, 786445, 5, 5, 786446, 5, 5, 786447, 5, 5, 786448, 5, 5, 786449, 5, 5, 786450, 5, 5, 786451, 5, 5, 720915, 5, 5, 720916, 5, 5, 786452, 5, 5, 720914, 5, 5, 720913, 5, 5, 720912, 5, 5, 720911, 5, 5, 720910, 5, 5, 720909, 5, 5, 720908, 5, 5, 720907, 5, 5, 720906, 5, 5, 720905, 5, 5, 720904, 5, 5, 720903, 5, 5, 720902, 5, 5, 720901, 5, 5, 720900, 5, 5, 720899, 5, 5, 720898, 5, 5, 720897, 5, 5, 720896, 5, 5, 720917, 5, 5, 786453, 5, 5, 720918, 5, 5, 720919, 5, 5, 655365, 262149, 3, 655378, 262149, 3, 655366, 262149, 3, 655367, 262149, 3, 655368, 262149, 3, 655369, 262149, 3, 655370, 262149, 3, 655371, 262149, 3, 655372, 262149, 3, 655373, 262149, 3, 655374, 262149, 3, 655375, 262149, 3, 655376, 262149, 3, 655377, 262149, 3, 786454, 5, 5, 786455, 5, 5, 655364, 262149, 4, 655363, 262149, 4, 655362, 262149, 4, 655361, 262149, 4, 655360, 262149, 4, 720895, 262149, 4, 655379, 262149, 4, 655380, 262149, 4, 655381, 262149, 4, 655382, 262149, 4, 655383, 262149, 4, 393220, 196613, 3, 262154, 196613, 3, 393232, 196613, 3, 393223, 196613, 2, 262157, 196613, 2, 393235, 196613, 2, 393221, 262149, 3, 393222, 262149, 3, 262155, 262149, 3, 262156, 262149, 3, 393233, 262149, 3, 393234, 262149, 3, 655384, 262149, 3, 786456, 5, 5, 720920, 5, 5)
 
 [node name="Player" parent="." instance=ExtResource("3_2c4st")]
 position = Vector2(864, 552)
 
 [node name="Credits Button" type="Button" parent="."]
+z_index = -1
 offset_left = 1120.0
-offset_top = 424.0
+offset_top = 288.0
 offset_right = 1400.0
-offset_bottom = 552.0
+offset_bottom = 416.0
 theme = SubResource("Theme_r82ae")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_5u8eh")
 text = "Credits"
 
 [node name="Help Map Button" type="Button" parent="."]
+z_index = -1
 offset_left = 280.0
-offset_top = 424.0
+offset_top = 288.0
 offset_right = 560.0
-offset_bottom = 560.0
+offset_bottom = 424.0
 theme = SubResource("Theme_v5s44")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_e7tnd")
 text = "Help Map"
 
 [node name="Play Game Button" type="Button" parent="."]
+z_index = -1
 offset_left = 696.0
-offset_top = 280.0
+offset_top = 152.0
 offset_right = 982.0
-offset_bottom = 409.0
+offset_bottom = 281.0
 rotation = -0.00204096
 theme = SubResource("Theme_j633r")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_jaqu0")
-text = "Play Game!"
+text = "Play Game"
 
 [node name="MenuAudio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("8_cc4ku")
 autoplay = true
 
 [node name="Button" type="Button" parent="."]
-offset_left = 376.0
-offset_top = 120.0
-offset_right = 1297.0
-offset_bottom = 184.0
+z_index = -1
+offset_left = 384.0
+offset_top = 64.0
+offset_right = 1305.0
+offset_bottom = 128.0
 theme = SubResource("Theme_08k48")
-text = "You will need to survive 45 seconds on the first level to move on to the next level!"
+text = "You will need to survive 60 seconds on the first level to move on to the next level!"
 
 [connection signal="pressed" from="Credits Button" to="." method="_on_credits_button_pressed"]
 [connection signal="pressed" from="Help Map Button" to="." method="_on_help_map_button_pressed"]

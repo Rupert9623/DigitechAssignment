@@ -11,7 +11,7 @@ func _on_button_pressed():
 	get_tree().change_scene_to_file("res://Prefabs/arena.tscn")
 func _ready():
 	_update_ui()
-
+#eejdhghgsshjdghsdgh
 	
 func _update_ui():
 	$GameUi2/ScoreLabel2.text = "SCORE: "+ str(score)

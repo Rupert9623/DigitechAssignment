@@ -5,8 +5,6 @@ var score = 0
 @onready var ArrowPrefab = preload("res://Prefabs/arrow.tscn")
 @onready var HealItem = preload("res://Prefabs/heal_item.tscn")
 
-func _on_button_pressed():
-	get_tree().change_scene_to_file("res://Prefabs/arena.tscn")
 func _ready():
 	_update_ui()
 func _process(_delta):
@@ -29,7 +27,7 @@ func _update_ui():
 func _on_score_timer_timeout():
 	score += 1
 	_update_ui()
-	if score == 45:
+	if score == 60:
 		get_tree().change_scene_to_file("res://Prefabs/arena.tscn")
 
 func _on_low_arrow_timer_timeout():
@@ -46,13 +44,3 @@ func _on_heal_timer_timeout():
 	var randomY = randi_range (70,700)
 	SpawnHeal.position = Vector2(1680, randomY)
 	add_child(SpawnHeal)
-
-	
-
-
-func _on_dev_skip_pressed():
-	get_tree().change_scene_to_file("res://Prefabs/arena_level_2.tscn")
-
-
-func _on_dev_skip_1_pressed():
-	get_tree().change_scene_to_file("res://Prefabs/arena.tscn")

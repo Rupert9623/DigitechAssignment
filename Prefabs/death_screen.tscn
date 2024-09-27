@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://g57lqfhgll84"]
 
 [ext_resource type="Script" path="res://Scripts/death_screen.gd" id="1_6fe65"]
-[ext_resource type="Texture2D" uid="uid://ceovcw7hm60ol" path="res://Unzipped Assets/startups_from_hell__underground_arena.png" id="1_ywgxj"]
+[ext_resource type="Texture2D" uid="uid://dss4yc1pviiw1" path="res://Unzipped Assets/GraveYard5.jpg" id="2_pw8k1"]
 [ext_resource type="FontFile" uid="uid://c6iqh5dfh3512" path="res://Unzipped Assets/NotJamGlasgow13/Not Jam Glasgow 13.ttf" id="3_lc0q5"]
 [ext_resource type="AudioStream" uid="uid://bfokx34nnc5hx" path="res://Unzipped Assets/Undertale OST - 097 But the Earth Refused to Die.mp3" id="4_om4kt"]
 
@@ -25,9 +25,9 @@ script = ExtResource("1_6fe65")
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(580.517, 324)
-scale = Vector2(2.29953, 2.07692)
-texture = ExtResource("1_ywgxj")
+position = Vector2(576, 324)
+scale = Vector2(3.31818, 2.83761)
+texture = ExtResource("2_pw8k1")
 
 [node name="MainMenu Button" type="Button" parent="."]
 offset_left = 432.0
@@ -56,6 +56,7 @@ vertical_alignment = 1
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_om4kt")
+volume_db = -5.0
 autoplay = true
 
 [node name="Try Again?" type="Button" parent="."]
@@ -68,7 +69,8 @@ theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_lc0q5")
 theme_override_font_sizes/font_size = 40
 theme_override_styles/pressed = SubResource("StyleBoxFlat_2rliy")
-text = "Try Again?"
+text = "Try Again?
+(Main levels)"
 
 [connection signal="pressed" from="MainMenu Button" to="." method="_on_main_menu_button_pressed"]
 [connection signal="pressed" from="Try Again?" to="." method="_on_try_again_pressed"]

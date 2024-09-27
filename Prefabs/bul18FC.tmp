@@ -1,0 +1,76 @@
+[gd_scene load_steps=7 format=3 uid="uid://dlm33nnwwuchy"]
+
+[ext_resource type="Texture2D" uid="uid://ceodn0j70g6lt" path="res://Unzipped Assets/Terraria_Underworld_Background.webp" id="1_274c6"]
+[ext_resource type="Script" path="res://Scripts/bullet_hell_arena.gd" id="1_bj4q5"]
+[ext_resource type="PackedScene" uid="uid://buxarhpgpehwc" path="res://Prefabs/hell_tile_map.tscn" id="3_cn6md"]
+[ext_resource type="PackedScene" uid="uid://c3hpavbfwam7" path="res://Prefabs/player.tscn" id="3_y477y"]
+[ext_resource type="AudioStream" uid="uid://c7bywhmlqjw0v" path="res://Unzipped Assets/13 Boss 3.mp3" id="4_hssi8"]
+[ext_resource type="FontFile" uid="uid://c6iqh5dfh3512" path="res://Unzipped Assets/NotJamGlasgow13/Not Jam Glasgow 13.ttf" id="6_r7ord"]
+
+[node name="BulletHell Arena" type="Node2D"]
+script = ExtResource("1_bj4q5")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_offset = Vector2(48, 48)
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(804, 368)
+scale = Vector2(1.69531, 1.37143)
+texture = ExtResource("1_274c6")
+
+[node name="Player" parent="." instance=ExtResource("3_y477y")]
+position = Vector2(616, 304)
+
+[node name="HellTileMap" parent="." instance=ExtResource("3_cn6md")]
+layer_0/tile_data = PackedInt32Array(-65536, 65536, 2, -65535, 65536, 2, -65534, 65536, 2, -65533, 65536, 2, -65532, 65536, 2, -65531, 65536, 2, -65530, 65536, 2, -65529, 65536, 2, -65528, 65536, 2, -65527, 65536, 2, -65526, 65536, 2, -65525, 65536, 2, -65524, 65536, 2, -65523, 65536, 2, -65522, 65536, 2, -65521, 65536, 2, -65520, 65536, 2, -65519, 65536, 2, -65518, 65536, 2, -65517, 65536, 2, -65516, 65536, 2, -65515, 65536, 2, -65514, 65536, 2, -1, 0, 3, 65535, 131072, 1, 131071, 131072, 1, 196607, 131072, 1, 262143, 131072, 1, 327679, 131072, 1, 393215, 131072, 1, 458751, 131072, 1, 524287, 131072, 1, 589823, 131072, 1, 655359, 131072, 1, 720895, 131072, 1, 786431, 131072, 1, 851967, 0, 5, 786432, 65536, 0, 786433, 65536, 0, 786434, 65536, 0, 786435, 65536, 0, 786436, 65536, 0, 786437, 65536, 0, 786438, 65536, 0, 786439, 65536, 0, 786440, 65536, 0, 786441, 65536, 0, 786442, 65536, 0, 786443, 65536, 0, 786444, 65536, 0, 786445, 65536, 0, 786446, 65536, 0, 786447, 65536, 0, 786448, 65536, 0, 786449, 65536, 0, 786450, 65536, 0, 786451, 65536, 0, 786452, 65536, 0, 786453, 65536, 0, 786454, 262144, 1, 786455, 65536, 0, 786456, 65536, 0, 786457, 65536, 0, 786459, 65536, 1, 786458, 131072, 5, 720923, 65536, 1, 655387, 65536, 1, 589851, 65536, 1, 524315, 65536, 1, 458779, 65536, 1, 393243, 65536, 1, 327707, 65536, 1, 262171, 65536, 1, 196635, 65536, 1, 131099, 65536, 1, 65563, 65536, 1, 27, 65536, 1, 720922, 196608, 1, 655386, 196608, 1, 589850, 196608, 1, 524314, 196608, 1, 458778, 196608, 1, 393242, 196608, 1, 327706, 196608, 1, 262170, 196608, 1, 196634, 196608, 1, 131098, 196608, 1, 65562, 196608, 1, 26, 196608, 1, -65513, 65536, 2, -65512, 65536, 2, -65511, 65536, 2, -65510, 131072, 3, -65509, 0, 5)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_hssi8")
+volume_db = 10.0
+autoplay = true
+
+[node name="HellScoreTimer" type="Timer" parent="."]
+autostart = true
+
+[node name="HellControl" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HellLabel" type="Label" parent="HellControl"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 692.0
+offset_top = 8.0
+offset_right = 929.0
+offset_bottom = 49.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("6_r7ord")
+theme_override_font_sizes/font_size = 40
+text = "SCORE: 0000"
+
+[node name="FireDownTimer" type="Timer" parent="."]
+autostart = true
+
+[node name="FireLR Timer" type="Timer" parent="."]
+wait_time = 8.0
+autostart = true
+
+[node name="Fire Low_Med_High LR timer" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[node name="LavaStreamTimerL" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="HellScoreTimer" to="." method="_on_hell_score_timer_timeout"]
+[connection signal="timeout" from="FireDownTimer" to="." method="_on_fire_down_timer_timeout"]
+[connection signal="timeout" from="FireLR Timer" to="." method="_on_fire_lr_timer_timeout"]
+[connection signal="timeout" from="Fire Low_Med_High LR timer" to="." method="_on_fire_low_med_high_lr_timer_timeout"]
+[connection signal="timeout" from="LavaStreamTimerL" to="." method="_on_lava_stream_timer_l_timeout"]

@@ -23,6 +23,8 @@ func _update_ui():
 func _on_score_timer_3_timeout():
 	score += 1
 	_update_ui()
+	if score == 100:
+		get_tree().change_scene_to_file("res://Prefabs/win_map.tscn")
 
 func _on_health_timer_timeout():
 	var Hitem = HealthItem.instantiate()
@@ -43,35 +45,35 @@ func _on_down_enemy_timer_timeout():
 
 func _on_enemy_timer_low_timeout():
 	var arrowlow = ArrowPrefab.instantiate()
-	var randomYAL = randi_range (580,700)
+	var randomYAL = randi_range (640,700)
 	arrowlow.position = Vector2(1680, randomYAL)
 	add_child(arrowlow)
 	
 	var arrowlowRight = ArrowRight.instantiate()
-	var RandomY2ALR = randi_range (580, 700)
+	var RandomY2ALR = randi_range (640, 700)
 	arrowlowRight.position = Vector2(-2, RandomY2ALR)
 	add_child(arrowlowRight)
 
 func _on_enemy_timer_high_timeout():
 	
 	var enemyRH = ArrowRight.instantiate()
-	var RandomY2H = randi_range (0,256)
+	var RandomY2H = randi_range (0,200)
 	enemyRH.position = Vector2(-2, RandomY2H)
 	add_child(enemyRH)
 	
 	var enemyH = ArrowPrefab.instantiate()
-	var randomYH = randi_range (0,256)
+	var randomYH = randi_range (10,200)
 	enemyH.position = Vector2(1680, randomYH)
 	add_child(enemyH)
 
 func _on_enemy_timer_medium_timeout():
 	var enemyRHM = ArrowRight.instantiate()
-	var RandomY2HM = randi_range (300, 580)
+	var RandomY2HM = randi_range (350,600)
 	enemyRHM.position = Vector2(-2, RandomY2HM)
 	add_child(enemyRHM)
 	
 	var enemyHM = ArrowPrefab.instantiate()
-	var randomYHM = randi_range (300,580)
+	var randomYHM = randi_range (350,600)
 	enemyHM.position = Vector2(1680, randomYHM)
 	add_child(enemyHM)
 

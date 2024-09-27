@@ -1,6 +1,6 @@
 extends Area2D
 class_name SpearR
-@export var speed = 15
+@export var speed = 22.5
 
 
 # Called when the node enters the scene tree for the first time.
