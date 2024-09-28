@@ -12,4 +12,5 @@ func _process(_delta):
 
 
 func _on_timeout():
+	#This sets how many enemys will spawn
 	set_wait_time(2.5)

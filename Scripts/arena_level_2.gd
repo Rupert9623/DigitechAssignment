@@ -1,7 +1,9 @@
 extends Node2D
 
+#This sets the score to zero at the start of the game
 var score = 0
 
+#This are all the enemys that will be used
 @onready var ArrowPrefab = preload("res://Prefabs/arrow.tscn")
 @onready var ArrowRight  = preload("res://Prefabs/arrow_right.tscn")
 @onready var RockPrefab = preload("res://Prefabs/rock.tscn")
@@ -10,21 +12,26 @@ var score = 0
 @onready var SpearRight = preload("res://Prefabs/spear_r.tscn")
 @onready var KnifeDown = preload("res://Prefabs/knife_down.tscn")
 
-func _on_button_pressed():
-	get_tree().change_scene_to_file("res://Prefabs/arena.tscn")
 func _ready():
 	_update_ui()
 func _process(_delta):
+	#This is used so that the cusor is always hidden and doesn't annoy the player
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
-	
+
+#this is the function that will increase the score by 1
 func _update_ui():
 	$GameUi3/ScoreLabel3.text = "SCORE: "+ str(score)
 
 func _on_score_timer_3_timeout():
 	score += 1
 	_update_ui()
+	#This will switch the project to the next level
 	if score == 100:
 		get_tree().change_scene_to_file("res://Prefabs/win_map.tscn")
+
+#All of the functions below give me access to where each enemy has a possiblilty 
+#to spawn, this control means that I can increase and decrease the ranges where 
+#the enemys spawn from
 
 func _on_health_timer_timeout():
 	var Hitem = HealthItem.instantiate()

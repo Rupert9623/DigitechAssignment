@@ -12,5 +12,6 @@ func _process(_delta):
 
 
 func _on_ramp_up_timer_timeout():
+	#This sets how many enemys spawn
 	print("ramp1")
 	set_wait_time(1)

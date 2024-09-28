@@ -1,6 +1,7 @@
 extends Area2D
+#This names the enemy for the player to idenytify
 class_name LavaStream
-#IMPORTANT : named Rock Down because they do the same thing
+#This sets the speed value
 @export var speed = 20
 
 # Called when the node enters the scene tree for the first time.
@@ -10,8 +11,10 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
+	#This sets how fast across the x axis the enemy will move
 	position.y -= speed
 func _on_body_entered(body):
+	#This means that when the enemy comes in contact with the player it will disapear
 	if body.name == 'Player':
 		queue_free()
 	

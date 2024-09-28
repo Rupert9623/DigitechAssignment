@@ -1,7 +1,9 @@
 extends Node2D
 
+#This sets the score to zero at the start of the game
 var score = 0
 
+#These are all the enemys that will be used
 @onready var FireD = preload("res://Prefabs/fire_down.tscn")
 @onready var FireL = preload("res://Prefabs/fire_left.tscn")
 @onready var FireR = preload("res://Prefabs/fire_right.tscn")
@@ -10,18 +12,26 @@ var score = 0
 @onready var LavaStreamU = preload("res://Prefabs/lava_stream_across.tscn")
 @onready var HealthItem = preload("res://Prefabs/heal_item.tscn")
 @onready var LavaStreamSD = preload("res://Prefabs/lava_stream_down.tscn")
+
 func _ready():
 	_update_ui()
 
 func _update_ui():
+	#This function will increase the score by one
 	$HellControl2/Helllabel2.text = "SCORE: "+ str(score)
 func _process(_delta):
+	#This will make the cursor be hidden the whole time during play
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 func _on_hell_score_timer_timeout():
 	score += 1
 	_update_ui()
-	if score == 100:
+	#When the score reachs 120 this will switch the project to the next level
+	if score == 120:
 		get_tree().change_scene_to_file("res://Prefabs/win_map.tscn")
+
+#All of the functions below give me access to where each enemy has a possiblilty 
+#to spawn, this control means that I can increase and decrease the ranges where 
+#the enemys spawn from.
 
 func _on_fire_down_timer_timeout():
 	var DownFire = FireD.instantiate()
@@ -49,8 +59,6 @@ func _on_fire_grid_timer_timeout():
 	var randomYHM = randi_range (300,580)
 	FireM.position = Vector2(2000, randomYHM)
 	add_child(FireM)
-	
-
 
 func _on_fire_rand_lr_timer_timeout():
 	var LeftFire = FireL.instantiate()
@@ -65,7 +73,6 @@ func _on_fire_rand_lr_timer_timeout():
 	var randomy = randi_range (70,760)
 	Hitem.position = Vector2(1680, randomy)
 	add_child(Hitem)
-
 
 func _on_lava_stream_timer_main_timeout():
 	var LavaSD = LavaStreamSD.instantiate()
