@@ -82,3 +82,4 @@ func _on_lava_stream_timer_l_timeout():
 	var XFireStreamU = randi_range (0,1664)
 	LavaU.position = Vector2(XFireStreamU, 2000)
 	add_child(LavaU)
+

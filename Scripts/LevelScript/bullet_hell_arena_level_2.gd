@@ -77,7 +77,7 @@ func _on_fire_rand_lr_timer_timeout():
 func _on_lava_stream_timer_main_timeout():
 	var LavaSD = LavaStreamSD.instantiate()
 	var XSDFireStream = randi_range (10,1654)
-	LavaSD.position = Vector2(XSDFireStream, -700)
+	LavaSD.position = Vector2(XSDFireStream, -1000)
 	add_child(LavaSD)
 	var LavaU = LavaStreamU.instantiate()
 	var XUFireStreamU = randi_range (0,1664)

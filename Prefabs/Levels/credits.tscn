@@ -67,15 +67,15 @@ Music for Bullet Hell arena: https://archive.org/details/05-underground/13+Boss+
 Assets made by me used the website: Piskel to help make them
 Some assets were not used but helped create the overal game
 Game inspired by Undertale and Terraria
-Thank you to ClipArtMax and internet archive
+Thank you to ClipArtMax, internet archive and kenny.nl
 "
 
 [node name="Back To menu" type="Button" parent="."]
 z_index = -1
 offset_left = 128.0
-offset_top = 640.0
+offset_top = 648.0
 offset_right = 1168.0
-offset_bottom = 760.0
+offset_bottom = 768.0
 theme = SubResource("Theme_g1gol")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_tl55o")
 text = "Go Back to main menu"
