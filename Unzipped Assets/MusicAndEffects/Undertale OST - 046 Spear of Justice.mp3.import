@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cty7n5742hxou"
+path="res://.godot/imported/Undertale OST - 046 Spear of Justice.mp3-4c433798af50551ef90584a235adbfdd.mp3str"
+
+[deps]
+
+source_file="res://Unzipped Assets/MusicAndEffects/Undertale OST - 046 Spear of Justice.mp3"
+dest_files=["res://.godot/imported/Undertale OST - 046 Spear of Justice.mp3-4c433798af50551ef90584a235adbfdd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

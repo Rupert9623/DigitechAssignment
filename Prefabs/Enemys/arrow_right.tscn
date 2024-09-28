@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://baq36f74emex"]
+
+[ext_resource type="Script" path="res://Scripts/EnemyScrips/ArrowRight.gd" id="1_urh2h"]
+[ext_resource type="Texture2D" uid="uid://cg0tq5korfujy" path="res://Unzipped Assets/R (1).png" id="2_7h52c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a7nhw"]
+size = Vector2(24, 22)
+
+[node name="ArrowRight" type="Area2D"]
+script = ExtResource("1_urh2h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(44, 5)
+shape = SubResource("RectangleShape2D_a7nhw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-8.41894, -0.198457)
+rotation = 1.5708
+scale = Vector2(0.0375359, 0.0481481)
+texture = ExtResource("2_7h52c")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

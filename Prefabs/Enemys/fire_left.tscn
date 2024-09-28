@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dhaa7lqygqalm"]
+
+[ext_resource type="Texture2D" uid="uid://mbf4hjr53noe" path="res://Unzipped Assets/clipart1309663.png.png" id="1_iip8b"]
+[ext_resource type="Script" path="res://Scripts/EnemyScrips/fire_left.gd" id="1_ljpum"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jt53a"]
+size = Vector2(68, 48)
+
+[node name="FireLeft" type="Area2D"]
+script = ExtResource("1_ljpum")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-26, 0)
+shape = SubResource("RectangleShape2D_jt53a")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(32.5098, 0.222786)
+rotation = 1.5708
+scale = Vector2(0.226661, 0.428544)
+texture = ExtResource("1_iip8b")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://1ovtkggptpj7"
+path="res://.godot/imported/07 Jungle.mp3-836628fa151c8aadfb169f16057a4da9.mp3str"
+
+[deps]
+
+source_file="res://Unzipped Assets/MusicAndEffects/07 Jungle.mp3"
+dest_files=["res://.godot/imported/07 Jungle.mp3-836628fa151c8aadfb169f16057a4da9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
