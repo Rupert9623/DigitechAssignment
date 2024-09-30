@@ -6,8 +6,8 @@
 [ext_resource type="FontFile" uid="uid://c6iqh5dfh3512" path="res://Unzipped Assets/AssetPool/NotJamGlasgow13/Not Jam Glasgow 13.ttf" id="5_ajcun"]
 [ext_resource type="Texture2D" uid="uid://cd2pn38n1i36u" path="res://Unzipped Assets/Backgrounds+HellTiles/HelpMapBackgroundNew.png" id="5_dabqw"]
 [ext_resource type="AudioStream" uid="uid://1ovtkggptpj7" path="res://Unzipped Assets/MusicAndEffects/07 Jungle.mp3" id="6_wibni"]
-[ext_resource type="Texture2D" uid="uid://ccv8x3wn0m3n4" path="res://Unzipped Assets/Enemys and items/c2e4fbe8c20ce87.png" id="7_3f6oq"]
-[ext_resource type="Texture2D" uid="uid://beck85nswat6" path="res://Unzipped Assets/Enemys and items/R (1).png" id="9_pjvlq"]
+[ext_resource type="Texture2D" uid="uid://bevdhf4qd7ru" path="res://Unzipped Assets/EnemyFiles/c2e4fbe8c20ce87.png" id="7_3f6oq"]
+[ext_resource type="Texture2D" uid="uid://buamok5nrbh75" path="res://Unzipped Assets/EnemyFiles/R (1).png" id="9_pjvlq"]
 [ext_resource type="Texture2D" uid="uid://b6b3ewdmw7bbt" path="res://Unzipped Assets/AssetPool/kenney_space-shooter-redux (1)/PNG/Meteors/meteorGrey_big4.png" id="10_btdaf"]
 [ext_resource type="PackedScene" uid="uid://doblelpd7cd8m" path="res://Prefabs/Player+Item/help_map_player.tscn" id="10_h6u4d"]
 

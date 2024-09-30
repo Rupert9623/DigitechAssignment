@@ -1,12 +1,12 @@
 [gd_scene load_steps=30 format=3 uid="uid://c3hpavbfwam7"]
 
 [ext_resource type="Script" path="res://Scripts/PlayerScript+ItemScript/Player.gd" id="1_bpkap"]
-[ext_resource type="AudioStream" uid="uid://bau0snklndqug" path="res://Unzipped Assets/MusicAndEffects/terraria-hurt-made-with-Voicemod.mp3" id="3_0xxhr"]
-[ext_resource type="Texture2D" uid="uid://c4x03l5b5m6kk" path="res://Unzipped Assets/AssetPool/kenney_toon-characters-1/Male adventurer/Tilesheet/character_maleAdventurer_sheetHD.png" id="3_xwi07"]
-[ext_resource type="AudioStream" uid="uid://6digihxhfgfa" path="res://Unzipped Assets/AssetPool/kenney_space-shooter-redux (1)/Bonus/sfx_shieldUp.ogg" id="4_cqjw5"]
-[ext_resource type="Texture2D" uid="uid://dukf1baed2m4g" path="res://Unzipped Assets/AssetPool/kenney_platformer-art-requests/Tiles/laserRedVertical.png" id="5_5oagj"]
-[ext_resource type="Texture2D" uid="uid://l1kq3yre1rgx" path="res://Unzipped Assets/AssetPool/kenney_platformer-art-requests/Tiles/laserRedBurst.png" id="6_nwhit"]
-[ext_resource type="FontFile" uid="uid://c6iqh5dfh3512" path="res://Unzipped Assets/AssetPool/NotJamGlasgow13/Not Jam Glasgow 13.ttf" id="7_ecxwj"]
+[ext_resource type="Texture2D" uid="uid://c4x03l5b5m6kk" path="res://Unzipped Assets/AssetPool/kenney_toon-characters-1/Male adventurer/Tilesheet/character_maleAdventurer_sheetHD.png" id="2_d5s4y"]
+[ext_resource type="AudioStream" uid="uid://bau0snklndqug" path="res://Unzipped Assets/MusicAndEffects/terraria-hurt-made-with-Voicemod.mp3" id="3_3s04y"]
+[ext_resource type="AudioStream" uid="uid://6digihxhfgfa" path="res://Unzipped Assets/AssetPool/kenney_space-shooter-redux (1)/Bonus/sfx_shieldUp.ogg" id="4_sclc3"]
+[ext_resource type="Texture2D" uid="uid://dukf1baed2m4g" path="res://Unzipped Assets/AssetPool/kenney_platformer-art-requests/Tiles/laserRedVertical.png" id="5_bbce5"]
+[ext_resource type="Texture2D" uid="uid://l1kq3yre1rgx" path="res://Unzipped Assets/AssetPool/kenney_platformer-art-requests/Tiles/laserRedBurst.png" id="6_q2yye"]
+[ext_resource type="FontFile" uid="uid://c6iqh5dfh3512" path="res://Unzipped Assets/AssetPool/NotJamGlasgow13/Not Jam Glasgow 13.ttf" id="7_u8520"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3rdds"]
 bg_color = Color(0, 0, 0, 1)
@@ -24,67 +24,67 @@ expand_margin_bottom = 2.0
 bg_color = Color(1, 0.356863, 0.0352941, 1)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lo0yf"]
-atlas = ExtResource("3_xwi07")
+atlas = ExtResource("2_d5s4y")
 region = Rect2(0, 0, 192, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5go3q"]
-atlas = ExtResource("3_xwi07")
+atlas = ExtResource("2_d5s4y")
 region = Rect2(960, 512, 192, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gcuf6"]
-atlas = ExtResource("3_xwi07")
+atlas = ExtResource("2_d5s4y")
 region = Rect2(192, 0, 192, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yclty"]
-atlas = ExtResource("3_xwi07")
+atlas = ExtResource("2_d5s4y")
 region = Rect2(384, 0, 192, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v7t8o"]
-atlas = ExtResource("3_xwi07")
+atlas = ExtResource("2_d5s4y")
 region = Rect2(384, 0, 192, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0jjmf"]
-atlas = ExtResource("3_xwi07")
+atlas = ExtResource("2_d5s4y")
 region = Rect2(384, 0, 192, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_66km0"]
-atlas = ExtResource("3_xwi07")
+atlas = ExtResource("2_d5s4y")
 region = Rect2(384, 0, 192, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a036t"]
-atlas = ExtResource("3_xwi07")
+atlas = ExtResource("2_d5s4y")
 region = Rect2(384, 0, 192, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_psu2s"]
-atlas = ExtResource("3_xwi07")
+atlas = ExtResource("2_d5s4y")
 region = Rect2(0, 1024, 192, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wx6mc"]
-atlas = ExtResource("3_xwi07")
+atlas = ExtResource("2_d5s4y")
 region = Rect2(192, 1024, 192, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sbvdy"]
-atlas = ExtResource("3_xwi07")
+atlas = ExtResource("2_d5s4y")
 region = Rect2(384, 1024, 192, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_piwr3"]
-atlas = ExtResource("3_xwi07")
+atlas = ExtResource("2_d5s4y")
 region = Rect2(576, 1024, 192, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1saec"]
-atlas = ExtResource("3_xwi07")
+atlas = ExtResource("2_d5s4y")
 region = Rect2(768, 1024, 192, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_er1vh"]
-atlas = ExtResource("3_xwi07")
+atlas = ExtResource("2_d5s4y")
 region = Rect2(960, 1024, 192, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jy658"]
-atlas = ExtResource("3_xwi07")
+atlas = ExtResource("2_d5s4y")
 region = Rect2(1152, 1024, 192, 256)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_txwtm"]
-atlas = ExtResource("3_xwi07")
+atlas = ExtResource("2_d5s4y")
 region = Rect2(1344, 1024, 192, 256)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1irmf"]
@@ -160,7 +160,7 @@ size = Vector2(80, 152)
 size = Vector2(96, 160)
 
 [sub_resource type="Theme" id="Theme_8fk1l"]
-default_font = ExtResource("7_ecxwj")
+default_font = ExtResource("7_u8520")
 default_font_size = 30
 
 [node name="Player" type="CharacterBody2D"]
@@ -206,27 +206,27 @@ position = Vector2(0, 48)
 shape = SubResource("RectangleShape2D_kbkky")
 
 [node name="PlayerHurt" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("3_0xxhr")
+stream = ExtResource("3_3s04y")
 volume_db = 24.0
 
 [node name="PlayerHeal" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("4_cqjw5")
+stream = ExtResource("4_sclc3")
 volume_db = 24.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(9.53674e-07, -92)
 scale = Vector2(0.457143, 0.342857)
-texture = ExtResource("5_5oagj")
+texture = ExtResource("5_bbce5")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(-122.5, -92)
 scale = Vector2(1.07143, 1.02857)
-texture = ExtResource("6_nwhit")
+texture = ExtResource("6_q2yye")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
 position = Vector2(130.5, -92)
 scale = Vector2(1.07143, 1.02857)
-texture = ExtResource("6_nwhit")
+texture = ExtResource("6_q2yye")
 
 [node name="HealthControl" type="Control" parent="."]
 layout_mode = 3

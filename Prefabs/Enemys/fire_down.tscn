@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://d3os01ufmpf5l"]
 
 [ext_resource type="Script" path="res://Scripts/EnemyScrips/fire_down.gd" id="1_nx35w"]
-[ext_resource type="Texture2D" uid="uid://pavwlghb775b" path="res://Unzipped Assets/clipart1983144.png.png" id="2_bnhab"]
+[ext_resource type="Texture2D" uid="uid://b0omxxtwa844b" path="res://Unzipped Assets/EnemyFiles/clipart1983144.png.png" id="2_bnhab"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3iaco"]
 size = Vector2(128, 128)

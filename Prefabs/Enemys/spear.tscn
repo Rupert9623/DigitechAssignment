@@ -1,21 +1,21 @@
-[gd_scene load_steps=4 format=3 uid="uid://bk3lld1cjdm7r"]
+[gd_scene load_steps=4 format=3 uid="uid://cvqp7c20l5kpe"]
 
 [ext_resource type="Script" path="res://Scripts/EnemyScrips/spear.gd" id="1_6s184"]
-[ext_resource type="Texture2D" uid="uid://dbagc2f16g1b7" path="res://Unzipped Assets/e16a31ac3b69511 - Copy.png" id="2_jw1eq"]
+[ext_resource type="Texture2D" uid="uid://fcokhjs32wh3" path="res://Unzipped Assets/EnemyFiles/e16a31ac3b69511 - Copy.png" id="2_jw1eq"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3ygyk"]
-size = Vector2(36.5, 24)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2yd23"]
+size = Vector2(34.5, 34)
 
-[node name="Spear" type="Area2D"]
+[node name="spear" type="Area2D"]
 script = ExtResource("1_6s184")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(3.8147e-06, 3.8147e-06)
-scale = Vector2(0.25, 0.444444)
-texture = ExtResource("2_jw1eq")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-106.25, 4)
-shape = SubResource("RectangleShape2D_3ygyk")
+position = Vector2(-104, 8)
+shape = SubResource("RectangleShape2D_2yd23")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.701912, -0.594203)
+scale = Vector2(0.255244, 0.452718)
+texture = ExtResource("2_jw1eq")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

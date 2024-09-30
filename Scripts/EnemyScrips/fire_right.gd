@@ -18,3 +18,5 @@ func _on_body_entered(body):
 	#When the enemy comes in contact with the player it will cause the enemy to disapeer
 	if body.name == 'Player':
 		queue_free()
+
+

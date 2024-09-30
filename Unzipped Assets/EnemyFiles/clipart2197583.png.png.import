@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjcko1nsi0461"
-path="res://.godot/imported/clipart1309663.png.png-c775cd045c75b8d67d4c918658e81a46.ctex"
+uid="uid://d1hwcsl83bdb0"
+path="res://.godot/imported/clipart2197583.png.png-a1b0d6a049b1588fa8c03527756eff63.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Unzipped Assets/Enemys and items/clipart1309663.png.png"
-dest_files=["res://.godot/imported/clipart1309663.png.png-c775cd045c75b8d67d4c918658e81a46.ctex"]
+source_file="res://Unzipped Assets/EnemyFiles/clipart2197583.png.png"
+dest_files=["res://.godot/imported/clipart2197583.png.png-a1b0d6a049b1588fa8c03527756eff63.ctex"]
 
 [params]
 

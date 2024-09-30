@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://g57lqfhgll84"]
 
 [ext_resource type="Script" path="res://Scripts/LevelScript/death_screen.gd" id="1_6fe65"]
-[ext_resource type="Texture2D" uid="uid://bh2rjwot2aj1c" path="res://Unzipped Assets/Backgrounds+HellTiles/GraveYard5.jpg" id="2_pw8k1"]
-[ext_resource type="FontFile" uid="uid://c6iqh5dfh3512" path="res://Unzipped Assets/AssetPool/NotJamGlasgow13/Not Jam Glasgow 13.ttf" id="3_lc0q5"]
-[ext_resource type="AudioStream" uid="uid://dqf5dfbq0of0g" path="res://Unzipped Assets/MusicAndEffects/Undertale OST - 097 But the Earth Refused to Die.mp3" id="4_om4kt"]
+[ext_resource type="Texture2D" uid="uid://bh2rjwot2aj1c" path="res://Scripts/LevelScript/Unzipped Assets/Backgrounds+HellTiles/GraveYard5.jpg" id="2_pw8k1"]
+[ext_resource type="FontFile" uid="uid://c6iqh5dfh3512" path="res://Scripts/LevelScript/Unzipped Assets/AssetPool/NotJamGlasgow13/Not Jam Glasgow 13.ttf" id="3_lc0q5"]
+[ext_resource type="AudioStream" uid="uid://dqf5dfbq0of0g" path="res://Scripts/LevelScript/Unzipped Assets/MusicAndEffects/Undertale OST - 097 But the Earth Refused to Die.mp3" id="4_om4kt"]
 
 [sub_resource type="Theme" id="Theme_ok4ai"]
 
@@ -25,8 +25,8 @@ script = ExtResource("1_6fe65")
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(576, 324)
-scale = Vector2(3.31818, 2.83761)
+position = Vector2(576, 344)
+scale = Vector2(3.31818, 3.00855)
 texture = ExtResource("2_pw8k1")
 
 [node name="MainMenu Button" type="Button" parent="."]

@@ -2,10 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://v7qctv8pjko6" path="res://Prefabs/Levels/tile_map.tscn" id="1_6yl0f"]
 [ext_resource type="Script" path="res://Scripts/LevelScript/arena_level_2.gd" id="1_60je3"]
-[ext_resource type="Texture2D" uid="uid://cigeoq8khsupk" path="res://Unzipped Assets/Backgrounds+HellTiles/startups_from_hell__underground_arena.png" id="2_wlktl"]
+[ext_resource type="Texture2D" uid="uid://cigeoq8khsupk" path="res://Scripts/LevelScript/Unzipped Assets/Backgrounds+HellTiles/startups_from_hell__underground_arena.png" id="2_wlktl"]
 [ext_resource type="PackedScene" uid="uid://c3hpavbfwam7" path="res://Prefabs/Player+Item/player.tscn" id="3_m8wdb"]
-[ext_resource type="FontFile" uid="uid://c6iqh5dfh3512" path="res://Unzipped Assets/AssetPool/NotJamGlasgow13/Not Jam Glasgow 13.ttf" id="9_4ahud"]
-[ext_resource type="AudioStream" uid="uid://41ytsb028mhw" path="res://Unzipped Assets/MusicAndEffects/Undertale OST - 098 Battle Against a True Hero.mp3" id="9_mln4t"]
+[ext_resource type="FontFile" uid="uid://c6iqh5dfh3512" path="res://Scripts/LevelScript/Unzipped Assets/AssetPool/NotJamGlasgow13/Not Jam Glasgow 13.ttf" id="9_4ahud"]
+[ext_resource type="AudioStream" uid="uid://41ytsb028mhw" path="res://Scripts/LevelScript/Unzipped Assets/MusicAndEffects/Undertale OST - 098 Battle Against a True Hero.mp3" id="9_mln4t"]
 
 [node name="Arena Level 2" type="Node2D"]
 script = ExtResource("1_60je3")
@@ -36,9 +36,12 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="ScoreLabel3" type="Label" parent="GameUi3"]
+z_index = -1
 layout_mode = 0
 offset_right = 1688.0
 offset_bottom = 128.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("9_4ahud")
 theme_override_font_sizes/font_size = 40
 text = "SCORE: 0000"

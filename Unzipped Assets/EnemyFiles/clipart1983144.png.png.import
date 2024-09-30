@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1h0q2hb1a4lp"
-path="res://.godot/imported/Dark_spike.png-d3b3068cc7272c312b27e05bb78932de.ctex"
+uid="uid://b0omxxtwa844b"
+path="res://.godot/imported/clipart1983144.png.png-8a8db3db5a8f302093c045a875ec2927.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Unzipped Assets/Enemys and items/Dark_spike.png"
-dest_files=["res://.godot/imported/Dark_spike.png-d3b3068cc7272c312b27e05bb78932de.ctex"]
+source_file="res://Unzipped Assets/EnemyFiles/clipart1983144.png.png"
+dest_files=["res://.godot/imported/clipart1983144.png.png-8a8db3db5a8f302093c045a875ec2927.ctex"]
 
 [params]
 

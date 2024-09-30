@@ -1,22 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://baq36f74emex"]
+[gd_scene load_steps=4 format=3 uid="uid://cng00jsiusm8s"]
 
-[ext_resource type="Script" path="res://Scripts/EnemyScrips/ArrowRight.gd" id="1_urh2h"]
-[ext_resource type="Texture2D" uid="uid://cg0tq5korfujy" path="res://Unzipped Assets/R (1).png" id="2_7h52c"]
+[ext_resource type="Script" path="res://Scripts/EnemyScrips/arrowright.gd" id="1_p5x7h"]
+[ext_resource type="Texture2D" uid="uid://buamok5nrbh75" path="res://Unzipped Assets/EnemyFiles/R (1).png" id="2_7h52c"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_a7nhw"]
-size = Vector2(24, 22)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r0bmv"]
+size = Vector2(20, 18.5)
 
-[node name="ArrowRight" type="Area2D"]
-script = ExtResource("1_urh2h")
+[node name="arrowright" type="Area2D"]
+script = ExtResource("1_p5x7h")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(44, 5)
-shape = SubResource("RectangleShape2D_a7nhw")
+position = Vector2(48, 7.75)
+shape = SubResource("RectangleShape2D_r0bmv")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-8.41894, -0.198457)
+position = Vector2(0.102623, 2.24179)
 rotation = 1.5708
-scale = Vector2(0.0375359, 0.0481481)
+scale = Vector2(0.0359493, 0.0445623)
 texture = ExtResource("2_7h52c")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

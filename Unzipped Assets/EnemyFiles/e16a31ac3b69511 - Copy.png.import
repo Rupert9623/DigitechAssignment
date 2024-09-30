@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5kwc3ld1kreh"
-path="res://.godot/imported/HelpMapBackgroundNew.png-16683114009fb5b962b4845c8f84e502.ctex"
+uid="uid://fcokhjs32wh3"
+path="res://.godot/imported/e16a31ac3b69511 - Copy.png-92b20b0f7763c2b6177beadb0c78a2c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Unzipped Assets/HelpMapBackgroundNew.png"
-dest_files=["res://.godot/imported/HelpMapBackgroundNew.png-16683114009fb5b962b4845c8f84e502.ctex"]
+source_file="res://Unzipped Assets/EnemyFiles/e16a31ac3b69511 - Copy.png"
+dest_files=["res://.godot/imported/e16a31ac3b69511 - Copy.png-92b20b0f7763c2b6177beadb0c78a2c0.ctex"]
 
 [params]
 

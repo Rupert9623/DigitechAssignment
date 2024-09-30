@@ -1,11 +1,11 @@
 [gd_scene load_steps=9 format=3 uid="uid://g4thb6c0xldb"]
 
 [ext_resource type="Script" path="res://Scripts/LevelScript/difficulty.gd" id="1_1jubq"]
-[ext_resource type="Texture2D" uid="uid://cigeoq8khsupk" path="res://Unzipped Assets/Backgrounds+HellTiles/startups_from_hell__underground_arena.png" id="1_ishwr"]
-[ext_resource type="FontFile" uid="uid://c6iqh5dfh3512" path="res://Unzipped Assets/AssetPool/NotJamGlasgow13/Not Jam Glasgow 13.ttf" id="2_hih6n"]
+[ext_resource type="Texture2D" uid="uid://cigeoq8khsupk" path="res://Scripts/LevelScript/Unzipped Assets/Backgrounds+HellTiles/startups_from_hell__underground_arena.png" id="1_ishwr"]
+[ext_resource type="FontFile" uid="uid://c6iqh5dfh3512" path="res://Scripts/LevelScript/Unzipped Assets/AssetPool/NotJamGlasgow13/Not Jam Glasgow 13.ttf" id="2_hih6n"]
 [ext_resource type="PackedScene" uid="uid://c3hpavbfwam7" path="res://Prefabs/Player+Item/player.tscn" id="3_dg237"]
 [ext_resource type="PackedScene" uid="uid://v7qctv8pjko6" path="res://Prefabs/Levels/tile_map.tscn" id="4_bu5k6"]
-[ext_resource type="AudioStream" uid="uid://44fwmrmovx37" path="res://Unzipped Assets/MusicAndEffects/Undertale OST - 031 Waterfall.mp3" id="5_4y28n"]
+[ext_resource type="AudioStream" uid="uid://44fwmrmovx37" path="res://Scripts/LevelScript/Unzipped Assets/MusicAndEffects/Undertale OST - 031 Waterfall.mp3" id="5_4y28n"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qnwpl"]
 bg_color = Color(1, 1, 1, 1)

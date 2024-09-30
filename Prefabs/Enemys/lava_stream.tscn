@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://dhjetdptgy530"]
 
-[ext_resource type="Texture2D" uid="uid://dgjfblrbdvl4v" path="res://Unzipped Assets/AssetPool/kenney_platformer-art-requests/Tiles/laserRedHorizontal.png" id="1_d0rm7"]
+[ext_resource type="Texture2D" uid="uid://dgjfblrbdvl4v" path="res://Scripts/LevelScript/Unzipped Assets/AssetPool/kenney_platformer-art-requests/Tiles/laserRedHorizontal.png" id="1_d0rm7"]
 [ext_resource type="Script" path="res://Scripts/EnemyScrips/lava_stream.gd" id="1_f7004"]
-[ext_resource type="Texture2D" uid="uid://l1kq3yre1rgx" path="res://Unzipped Assets/AssetPool/kenney_platformer-art-requests/Tiles/laserRedBurst.png" id="2_8hdkw"]
-[ext_resource type="Texture2D" uid="uid://chmdjv8emvcgd" path="res://Unzipped Assets/AssetPool/kenney_platformer-pack-industrial/PNG/Retina/platformIndustrial_112.png" id="4_rcx82"]
+[ext_resource type="Texture2D" uid="uid://l1kq3yre1rgx" path="res://Scripts/LevelScript/Unzipped Assets/AssetPool/kenney_platformer-art-requests/Tiles/laserRedBurst.png" id="2_8hdkw"]
+[ext_resource type="Texture2D" uid="uid://chmdjv8emvcgd" path="res://Scripts/LevelScript/Unzipped Assets/AssetPool/kenney_platformer-pack-industrial/PNG/Retina/platformIndustrial_112.png" id="4_rcx82"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yt50e"]
 size = Vector2(384, 20)

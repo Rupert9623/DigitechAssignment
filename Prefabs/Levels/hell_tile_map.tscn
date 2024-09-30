@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://buxarhpgpehwc"]
 
-[ext_resource type="Texture2D" uid="uid://dsoqhngg3n15u" path="res://Unzipped Assets/Backgrounds+HellTiles/[64x64] Dungeon Bricks Shadow Connection.png" id="1_26565"]
+[ext_resource type="Texture2D" uid="uid://dsoqhngg3n15u" path="res://Scripts/LevelScript/Unzipped Assets/Backgrounds+HellTiles/[64x64] Dungeon Bricks Shadow Connection.png" id="1_26565"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hxqit"]
 texture = ExtResource("1_26565")

@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://c44tonb4n674m"]
 
 [ext_resource type="Script" path="res://Scripts/LevelScript/win_map.gd" id="1_vlkup"]
-[ext_resource type="Texture2D" uid="uid://cy5bteek0htyh" path="res://Unzipped Assets/Backgrounds+HellTiles/Screenshot 2024-09-25 212639.png" id="2_2upwn"]
-[ext_resource type="FontFile" uid="uid://c6iqh5dfh3512" path="res://Unzipped Assets/AssetPool/NotJamGlasgow13/Not Jam Glasgow 13.ttf" id="2_q6ega"]
-[ext_resource type="AudioStream" uid="uid://buag1yapw23ow" path="res://Unzipped Assets/MusicAndEffects/10 The Hallow.mp3" id="3_0hajp"]
+[ext_resource type="Texture2D" uid="uid://cy5bteek0htyh" path="res://Scripts/LevelScript/Unzipped Assets/Backgrounds+HellTiles/Screenshot 2024-09-25 212639.png" id="2_2upwn"]
+[ext_resource type="FontFile" uid="uid://c6iqh5dfh3512" path="res://Scripts/LevelScript/Unzipped Assets/AssetPool/NotJamGlasgow13/Not Jam Glasgow 13.ttf" id="2_q6ega"]
+[ext_resource type="AudioStream" uid="uid://buag1yapw23ow" path="res://Scripts/LevelScript/Unzipped Assets/MusicAndEffects/10 The Hallow.mp3" id="3_0hajp"]
 
 [node name="WinMap" type="Node2D"]
 script = ExtResource("1_vlkup")

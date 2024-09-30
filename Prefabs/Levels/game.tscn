@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://b1rpm16eb3mti" path="res://Unzipped Assets/Backgrounds+HellTiles/Pixel Caves _ 2D Environments _ Unity Asset Store.jpg" id="3_a181u"]
 [ext_resource type="Script" path="res://Scripts/TimerScripts/enemy_timer.gd" id="6_1bd04"]
 [ext_resource type="FontFile" uid="uid://c8dd6b8uf8irk" path="res://Unzipped Assets/AssetPool/kenney_space-shooter-redux (1)/Bonus/kenvector_future.ttf" id="6_mdg1m"]
-[ext_resource type="FontFile" uid="uid://c6iqh5dfh3512" path="res://Unzipped Assets/AssetPool/NotJamGlasgow13/Not Jam Glasgow 13.ttf" id="7_xbh5r"]
+[ext_resource type="FontFile" uid="uid://boeeegyhxjt6v" path="res://Unzipped Assets/AssetPool/NotJamGlasgow13/Not Jam Glasgow 16.ttf" id="7_4hg5v"]
 [ext_resource type="AudioStream" uid="uid://bdde3q53ka7g3" path="res://Unzipped Assets/MusicAndEffects/Undertale OST - 059 Spider Dance.mp3" id="8_rl10t"]
 
 [sub_resource type="Theme" id="Theme_uu6xy"]
@@ -49,12 +49,16 @@ offset_bottom = 100.0
 theme = SubResource("Theme_uu6xy")
 
 [node name="ScoreLabel" type="Label" parent="GameUi"]
+z_index = -1
 layout_mode = 0
 offset_left = 632.0
 offset_top = 8.0
 offset_right = 1039.0
 offset_bottom = 60.0
-theme_override_fonts/font = ExtResource("7_xbh5r")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("7_4hg5v")
+theme_override_font_sizes/font_size = 50
 text = "SCCORE : 0000"
 horizontal_alignment = 1
 vertical_alignment = 1

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbagc2f16g1b7"
-path="res://.godot/imported/e16a31ac3b69511 - Copy.png-641c8e1f5fa6566455285a27e1718a0e.ctex"
+uid="uid://urr4g6xd5536"
+path="res://.godot/imported/Light_spike.png-6a93c20b484ed989e75ed7614b5b5406.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Unzipped Assets/e16a31ac3b69511 - Copy.png"
-dest_files=["res://.godot/imported/e16a31ac3b69511 - Copy.png-641c8e1f5fa6566455285a27e1718a0e.ctex"]
+source_file="res://Unzipped Assets/EnemyFiles/Light_spike.png"
+dest_files=["res://.godot/imported/Light_spike.png-6a93c20b484ed989e75ed7614b5b5406.ctex"]
 
 [params]
 

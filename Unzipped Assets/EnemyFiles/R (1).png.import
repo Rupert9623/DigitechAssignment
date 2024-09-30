@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmx8f40gl6d"
-path="res://.godot/imported/clipart1983144.png.png-4d42bc82e720a4e9970166ddb5ab13be.ctex"
+uid="uid://buamok5nrbh75"
+path="res://.godot/imported/R (1).png-9beaccafde46464b7cd4f28c20d5eba8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Unzipped Assets/Enemys and items/clipart1983144.png.png"
-dest_files=["res://.godot/imported/clipart1983144.png.png-4d42bc82e720a4e9970166ddb5ab13be.ctex"]
+source_file="res://Unzipped Assets/EnemyFiles/R (1).png"
+dest_files=["res://.godot/imported/R (1).png-9beaccafde46464b7cd4f28c20d5eba8.ctex"]
 
 [params]
 

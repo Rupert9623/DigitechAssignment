@@ -13,11 +13,16 @@ config_version=5
 config/name="Digitech Assesment"
 run/main_scene="res://Prefabs/Levels/menu.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
+run/max_fps=30
 config/icon="res://icon.svg"
 
 [display]
 
 window/size/resizable=false
+
+[editor]
+
+movie_writer/fps=30
 
 [physics]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ceovcw7hm60ol"
-path="res://.godot/imported/startups_from_hell__underground_arena.png-6d35e8102d81f7d6754e63ecbe96cdbb.ctex"
+uid="uid://cr5swq8vuqgqc"
+path="res://.godot/imported/Dark_spike.png-a72e9319ec688b6cedd9eb62e78b1661.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Unzipped Assets/startups_from_hell__underground_arena.png"
-dest_files=["res://.godot/imported/startups_from_hell__underground_arena.png-6d35e8102d81f7d6754e63ecbe96cdbb.ctex"]
+source_file="res://Unzipped Assets/EnemyFiles/Dark_spike.png"
+dest_files=["res://.godot/imported/Dark_spike.png-a72e9319ec688b6cedd9eb62e78b1661.ctex"]
 
 [params]
 
