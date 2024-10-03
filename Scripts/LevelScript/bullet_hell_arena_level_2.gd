@@ -31,7 +31,8 @@ func _on_hell_score_timer_timeout():
 
 #All of the functions below give me access to where each enemy has a possiblilty 
 #to spawn, this control means that I can increase and decrease the ranges where 
-#the enemys spawn from.
+#the enemys spawn from by creating a variable that tells the game to create a child
+#Then setting where it should by on the y axis by the randirange and setting the x axis
 
 func _on_fire_down_timer_timeout():
 	var DownFire = FireD.instantiate()

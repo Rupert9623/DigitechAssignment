@@ -25,7 +25,8 @@ func _on_score_timer_timeout():
 
 #All of the functions below give me access to where each enemy has a possiblilty 
 #to spawn, this control means that I can increase and decrease the ranges where 
-#the enemys spawn from.
+#the enemys spawn from by creating a variable that tells the game to create a child
+#Then setting where it should by on the y axis by the randirange and setting the x axis
 
 func _on_low_arrow_timer_timeout():
 	var enemy = ArrowPrefab.instantiate()
