@@ -12,8 +12,8 @@ func _ready():
 	#This will make sure that the value of health will equal damage inflicted to the player
 	health_bar.value = Health
 #This sets the value of both jump and run speed
-const SPEED = 1100.0
-const JUMP_VELOCITY = -1200.0
+const SPEED = 800.0
+const JUMP_VELOCITY = -1000.0
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 func _process(_delta):

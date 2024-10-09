@@ -154,10 +154,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8btcf"]
-size = Vector2(80, 152)
+size = Vector2(80, 120)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kbkky"]
-size = Vector2(96, 160)
+size = Vector2(82, 121)
 
 [sub_resource type="Theme" id="Theme_8fk1l"]
 default_font = ExtResource("7_u8520")
@@ -177,10 +177,10 @@ position_smoothing_enabled = true
 
 [node name="HealthBar" type="ProgressBar" parent="."]
 z_index = 1
-offset_left = -120.0
-offset_top = -96.0
-offset_right = 128.0
-offset_bottom = -88.0
+offset_left = -124.0
+offset_top = -48.0
+offset_right = 124.0
+offset_bottom = -40.0
 theme_override_styles/background = SubResource("StyleBoxFlat_3rdds")
 theme_override_styles/fill = SubResource("StyleBoxFlat_dlw82")
 max_value = 10.0
@@ -188,21 +188,21 @@ value = 5.0
 show_percentage = false
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-5.68434e-14, 8)
-scale = Vector2(0.916667, 0.9375)
+position = Vector2(-2.86102e-06, 24)
+scale = Vector2(0.666667, 0.75)
 sprite_frames = SubResource("SpriteFrames_1irmf")
 animation = &"Idle"
 autoplay = "Idle"
 frame_progress = 0.166322
 
 [node name="CollisionShapeMain" type="CollisionShape2D" parent="."]
-position = Vector2(0, 52)
+position = Vector2(0, 60)
 shape = SubResource("RectangleShape2D_8btcf")
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShapeMain2" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0, 48)
+position = Vector2(0, 59.5)
 shape = SubResource("RectangleShape2D_kbkky")
 
 [node name="PlayerHurt" type="AudioStreamPlayer2D" parent="."]
@@ -214,17 +214,17 @@ stream = ExtResource("4_sclc3")
 volume_db = 24.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(9.53674e-07, -92)
+position = Vector2(9.53674e-07, -44)
 scale = Vector2(0.457143, 0.342857)
 texture = ExtResource("5_bbce5")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(-122.5, -92)
+position = Vector2(-124, -44)
 scale = Vector2(1.07143, 1.02857)
 texture = ExtResource("6_q2yye")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
-position = Vector2(130.5, -92)
+position = Vector2(126, -44)
 scale = Vector2(1.07143, 1.02857)
 texture = ExtResource("6_q2yye")
 
@@ -237,9 +237,9 @@ offset_bottom = 40.0
 [node name="HealthLabel" type="Label" parent="HealthControl"]
 layout_mode = 0
 offset_left = -83.0
-offset_top = -135.0
+offset_top = -92.0
 offset_right = 84.0
-offset_bottom = -104.0
+offset_bottom = -61.0
 theme = SubResource("Theme_8fk1l")
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
