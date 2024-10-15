@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dhjetdptgy530"]
+[gd_scene load_steps=5 format=3 uid="uid://dhjetdptgy530"]
 
-[ext_resource type="Texture2D" uid="uid://dgjfblrbdvl4v" path="res://Scripts/LevelScript/Unzipped Assets/AssetPool/kenney_platformer-art-requests/Tiles/laserRedHorizontal.png" id="1_d0rm7"]
+[ext_resource type="Texture2D" uid="uid://dgjfblrbdvl4v" path="res://Unzipped Assets/AssetPool/kenney_platformer-art-requests/Tiles/laserRedHorizontal.png" id="1_d0rm7"]
 [ext_resource type="Script" path="res://Scripts/EnemyScrips/lava_stream.gd" id="1_f7004"]
-[ext_resource type="Texture2D" uid="uid://l1kq3yre1rgx" path="res://Scripts/LevelScript/Unzipped Assets/AssetPool/kenney_platformer-art-requests/Tiles/laserRedBurst.png" id="2_8hdkw"]
-[ext_resource type="Texture2D" uid="uid://chmdjv8emvcgd" path="res://Scripts/LevelScript/Unzipped Assets/AssetPool/kenney_platformer-pack-industrial/PNG/Retina/platformIndustrial_112.png" id="4_rcx82"]
+[ext_resource type="Texture2D" uid="uid://l1kq3yre1rgx" path="res://Unzipped Assets/AssetPool/kenney_platformer-art-requests/Tiles/laserRedBurst.png" id="2_8hdkw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yt50e"]
 size = Vector2(384, 20)
@@ -14,24 +13,19 @@ script = ExtResource("1_f7004")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_yt50e")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="LavaSprite" type="Sprite2D" parent="."]
 position = Vector2(7.62939e-06, -1.19209e-06)
 scale = Vector2(5.48571, 1.37143)
 texture = ExtResource("1_d0rm7")
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
+[node name="Detail" type="Sprite2D" parent="."]
 position = Vector2(-192, 0)
 rotation = 0.00054021
 texture = ExtResource("2_8hdkw")
 
-[node name="Sprite2D3" type="Sprite2D" parent="."]
+[node name="Detail2" type="Sprite2D" parent="."]
 position = Vector2(192, -2.38419e-07)
 scale = Vector2(1.07143, 1.07143)
 texture = ExtResource("2_8hdkw")
-
-[node name="Sprite2D4" type="Sprite2D" parent="."]
-position = Vector2(0, 448)
-scale = Vector2(0.914286, 0.9)
-texture = ExtResource("4_rcx82")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

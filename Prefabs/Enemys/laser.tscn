@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://460bcxq0o08t"]
 
-[ext_resource type="Texture2D" uid="uid://dgjfblrbdvl4v" path="res://Scripts/LevelScript/Unzipped Assets/AssetPool/kenney_platformer-art-requests/Tiles/laserRedHorizontal.png" id="2_qcnn3"]
+[ext_resource type="Texture2D" uid="uid://dgjfblrbdvl4v" path="res://Unzipped Assets/AssetPool/kenney_platformer-art-requests/Tiles/laserRedHorizontal.png" id="2_qcnn3"]
 
 [sub_resource type="GDScript" id="GDScript_4bw6s"]
 script/source = "extends Area2D

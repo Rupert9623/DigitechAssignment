@@ -13,7 +13,7 @@ script = ExtResource("1_ljpum")
 position = Vector2(-26, 0)
 shape = SubResource("RectangleShape2D_jt53a")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="FireLeftSprite" type="Sprite2D" parent="."]
 position = Vector2(32.5098, 0.222786)
 rotation = 1.5708
 scale = Vector2(0.226661, 0.428544)

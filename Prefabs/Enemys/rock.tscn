@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://clv7x2mnm088p"]
 
-[ext_resource type="Texture2D" uid="uid://b6b3ewdmw7bbt" path="res://Scripts/LevelScript/Unzipped Assets/AssetPool/kenney_space-shooter-redux (1)/PNG/Meteors/meteorGrey_big4.png" id="1_eft3e"]
+[ext_resource type="Texture2D" uid="uid://b6b3ewdmw7bbt" path="res://Unzipped Assets/AssetPool/kenney_space-shooter-redux (1)/PNG/Meteors/meteorGrey_big4.png" id="1_eft3e"]
 [ext_resource type="Script" path="res://Scripts/EnemyScrips/rock.gd" id="1_vudq0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bxhqk"]
@@ -12,7 +12,7 @@ script = ExtResource("1_vudq0")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_bxhqk")
 
-[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+[node name="RockSprite" type="Sprite2D" parent="CollisionShape2D"]
 position = Vector2(-4.76837e-07, 0)
 scale = Vector2(1.30612, 1.33333)
 texture = ExtResource("1_eft3e")

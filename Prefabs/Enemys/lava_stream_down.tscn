@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cp4tf8wdcftcw"]
+[gd_scene load_steps=5 format=3 uid="uid://cp4tf8wdcftcw"]
 
 [ext_resource type="Script" path="res://Scripts/EnemyScrips/LavaDown.gd" id="1_3f3by"]
-[ext_resource type="Texture2D" uid="uid://dukf1baed2m4g" path="res://Scripts/LevelScript/Unzipped Assets/AssetPool/kenney_platformer-art-requests/Tiles/laserRedVertical.png" id="2_ho6xs"]
-[ext_resource type="Texture2D" uid="uid://l1kq3yre1rgx" path="res://Scripts/LevelScript/Unzipped Assets/AssetPool/kenney_platformer-art-requests/Tiles/laserRedBurst.png" id="3_4e273"]
-[ext_resource type="Texture2D" uid="uid://chmdjv8emvcgd" path="res://Scripts/LevelScript/Unzipped Assets/AssetPool/kenney_platformer-pack-industrial/PNG/Retina/platformIndustrial_112.png" id="4_8w36w"]
+[ext_resource type="Texture2D" uid="uid://dukf1baed2m4g" path="res://Unzipped Assets/AssetPool/kenney_platformer-art-requests/Tiles/laserRedVertical.png" id="2_ho6xs"]
+[ext_resource type="Texture2D" uid="uid://l1kq3yre1rgx" path="res://Unzipped Assets/AssetPool/kenney_platformer-art-requests/Tiles/laserRedBurst.png" id="3_4e273"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_imhyk"]
 size = Vector2(18, 640)
@@ -15,22 +14,17 @@ script = ExtResource("1_3f3by")
 position = Vector2(-1, 0)
 shape = SubResource("RectangleShape2D_imhyk")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="LavaStream" type="Sprite2D" parent="."]
 position = Vector2(0, 1.52588e-05)
 scale = Vector2(1, 9.14286)
 texture = ExtResource("2_ho6xs")
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
+[node name="Detail2" type="Sprite2D" parent="."]
 position = Vector2(0, -320)
 texture = ExtResource("3_4e273")
 
-[node name="Sprite2D3" type="Sprite2D" parent="."]
+[node name="Detail" type="Sprite2D" parent="."]
 position = Vector2(0, 320)
 texture = ExtResource("3_4e273")
-
-[node name="Sprite2D4" type="Sprite2D" parent="."]
-position = Vector2(-2.38419e-07, 640)
-scale = Vector2(0.914286, 0.914286)
-texture = ExtResource("4_8w36w")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

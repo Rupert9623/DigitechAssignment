@@ -12,7 +12,7 @@ script = ExtResource("1_t8paf")
 position = Vector2(-47, -5)
 shape = SubResource("RectangleShape2D_shban")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="ArrowSprite" type="Sprite2D" parent="."]
 position = Vector2(1.04481, 0.594612)
 rotation = -1.5708
 scale = Vector2(0.0380607, 0.0452718)

@@ -176,7 +176,7 @@ limit_bottom = 0
 position_smoothing_enabled = true
 
 [node name="HealthBar" type="ProgressBar" parent="."]
-z_index = 1
+z_index = 2
 offset_left = -124.0
 offset_top = -48.0
 offset_right = 124.0
@@ -214,16 +214,19 @@ stream = ExtResource("4_sclc3")
 volume_db = 24.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
 position = Vector2(9.53674e-07, -44)
 scale = Vector2(0.457143, 0.342857)
 texture = ExtResource("5_bbce5")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
+z_index = 1
 position = Vector2(-124, -44)
 scale = Vector2(1.07143, 1.02857)
 texture = ExtResource("6_q2yye")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
+z_index = 1
 position = Vector2(126, -44)
 scale = Vector2(1.07143, 1.02857)
 texture = ExtResource("6_q2yye")
@@ -235,6 +238,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="HealthLabel" type="Label" parent="HealthControl"]
+z_index = 1
 layout_mode = 0
 offset_left = -83.0
 offset_top = -92.0

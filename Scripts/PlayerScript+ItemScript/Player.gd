@@ -11,24 +11,28 @@ var Health =  10
 func _ready():
 	#This will make sure that the value of health will equal damage inflicted to the player
 	health_bar.value = Health
-#This sets the value of both jump and run speed
-const SPEED = 800.0
-const JUMP_VELOCITY = -1000.0
-# Get the gravity from the project settings to be synced with RigidBody nodes.
-var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+
+	
 func _process(_delta):
 	#This means that if health is less than or euqal to zero the game will switch to the death screen
 	if Health <= 0:
 		get_tree().change_scene_to_file("res://Prefabs/Levels/death_screen.tscn")
 	_update_health()
+#This function updates the text box with HEALTH: 00 to the value of Health
+func _update_health():
+	$HealthControl/HealthLabel.text = "Health: "+ str(Health)
+#This sets the value of both jump and run speed
+const SPEED = 800.0
+const JUMP_VELOCITY = -1000.0
+# Get the gravity from the project settings to be synced with RigidBody nodes.
+var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+
 	
 #This is the jump cut function that will stop the player moving up once they release the up key
 func Jump_cut():
 	if velocity.y<0:
 		velocity.y *= 0.1
-#This function updates the text box with HEALTH: 00 to the value of Health
-func _update_health():
-	$HealthControl/HealthLabel.text = "Health: "+ str(Health)
+
 
 #This function makes all the animations works
 func _physics_process(delta):

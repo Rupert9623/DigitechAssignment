@@ -12,7 +12,7 @@ script = ExtResource("1_q204g")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_2edms")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="AppleSprite" type="Sprite2D" parent="."]
 position = Vector2(0, -9.53674e-07)
 scale = Vector2(0.261224, 0.237037)
 texture = ExtResource("2_ys5b6")

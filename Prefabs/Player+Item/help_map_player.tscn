@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=3 uid="uid://doblelpd7cd8m"]
 
 [ext_resource type="Script" path="res://Scripts/PlayerScript+ItemScript/HelpMapPlayer.gd" id="1_7oq5w"]
-[ext_resource type="Texture2D" uid="uid://c4x03l5b5m6kk" path="res://Scripts/LevelScript/Unzipped Assets/AssetPool/kenney_toon-characters-1/Male adventurer/Tilesheet/character_maleAdventurer_sheetHD.png" id="2_82525"]
+[ext_resource type="Texture2D" uid="uid://c4x03l5b5m6kk" path="res://Unzipped Assets/AssetPool/kenney_toon-characters-1/Male adventurer/Tilesheet/character_maleAdventurer_sheetHD.png" id="2_82525"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x8vpm"]
 atlas = ExtResource("2_82525")

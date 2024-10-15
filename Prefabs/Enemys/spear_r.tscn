@@ -13,7 +13,7 @@ script = ExtResource("1_3t1bm")
 position = Vector2(103, -5)
 shape = SubResource("RectangleShape2D_qqxcn")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="SpearSpriteRight" type="Sprite2D" parent="."]
 position = Vector2(0.611462, 2.31771)
 rotation = 3.14159
 scale = Vector2(0.256422, 0.450212)
